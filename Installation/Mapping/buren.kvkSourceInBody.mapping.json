@@ -11,7 +11,7 @@
     "total": "totaal",
     "offset": 0,
     "page": "pagina",
-    "pages": "pagina"
+    "pages": "{{ (totaal / aantal)|round(0, 'ceil') }}"
   },
   "cast": {
     "results": "jsonToArray",
