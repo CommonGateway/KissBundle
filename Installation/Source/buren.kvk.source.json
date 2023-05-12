@@ -32,6 +32,9 @@
             "in": {
                 "body": {
                     "mapping": "https://buren.nl/mapping/buren.kvkSourceInBody.mapping.json"
+                },
+                "error": {
+                  "mapping": "https://buren.nl/mapping/buren.kvkSourceInError.mapping.json"
                 }
             }
         }
