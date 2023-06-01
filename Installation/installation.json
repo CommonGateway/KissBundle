@@ -24,7 +24,7 @@
       },
       {
         "name": "SyncPubAction",
-        "reference": "https://kissdevelopment.commonground.nu/action/kiss.SyncPubAction.action.json",
+        "reference": "https://kissdevelopment.commonground.nu/action/buren.SyncPubAction.action.json",
         "actionHandler": "Kiss\\KissBundle\\ActionHandler\\SyncPubHandler",
         "listens": ["kiss.default.listens"],
         "version": "0.0.4",
