@@ -1,6 +1,7 @@
 {
     "https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json": [
         {
+            "_id": "868e6044-157f-4ee8-96b2-76370baf7171",
             "user": "dabbasoglu@kiss.gembur.nl",
             "department": "Vergunningen",
             "function": "Specialist omgevingsvergunningen",
@@ -50,6 +51,7 @@
             }
         },
         {
+            "_id": "f7435b1c-7c93-4e96-ac50-6140ead8891a",
             "user": "syps@kiss.gembur.nu",
             "department": "IV Dienstvelening en IT",
             "function": "Functioneel tester, functioneel ontwerper",
@@ -106,6 +108,7 @@
             }
         },
         {
+            "_id": "67283c9c-2c11-4ac7-8490-e9fe19afc4cb",
             "user": "jkuitenbrouwer@kiss.gembur.nl",
             "department": "Openbare ruimte",
             "function": "Planner openbare ruimte",
@@ -154,6 +157,7 @@
             }
         },
         {
+            "_id": "67283c9c-2c11-4ac7-8490-e9fe19afc4cb",
             "user": "f.delaBrioche@kiss.gembur.nl",
             "department": "Facilitaire diensten",
             "function": "Hoofd inkoop kantoorartikelen",
@@ -210,6 +214,7 @@
             }
         },
         {
+            "_id": "cef4baaa-ca64-4b6f-8dde-0877d455e320",
             "user": "s.de.bruin@kiss.gembur.nl",
             "department": "Burgerzaken",
             "function": "Baliemedewerker",
@@ -275,6 +280,7 @@
             }
         },
         {
+            "_id": "90894197-ceb3-417e-91af-91d33a899d06",
             "user": "m.bounoun@kiss.gembur.nl",
             "department": "Burgerzaken",
             "function": "Beleidsmedewerker",
@@ -336,6 +342,7 @@
             }
         },
         {
+            "_id": "bbfa3d51-8977-4538-822a-a409881677ea",
             "user": "y.cairo@kiss.gembur.nl",
             "department": "Groenbeheer",
             "function": "Beleidsmedewerker",
@@ -397,6 +404,7 @@
             }
         },
         {
+            "_id": "7ddb9616-1513-450c-b9a3-ad6d453fa78d",
             "user": "g.jongepier@kiss.gembur.nl",
             "department": "Juridische zaken",
             "function": "Medewerker juridische zaken",
@@ -458,6 +466,7 @@
             }
         },
         {
+            "_id": "97e3735b-72c5-4091-83e8-72edfbc17b03",
             "user": "s.bakhuis@kiss.gembur.nl",
             "department": "Overlast",
             "function": "Overlastmedewerker",
@@ -519,6 +528,7 @@
             }
         },
         {
+            "_id": "79932c39-017b-4aac-9ffa-af4a5c734b0a",
             "user": "j.tersteeege@kiss.gembur.nl",
             "department": "Burgerzaken",
             "function": "Baliemedewerker",
@@ -580,6 +590,7 @@
             }
         },
         {
+            "_id": "fc2acae2-8dd7-434a-81d7-08875fed9413",
             "user": "rintveld@kiss.gembur.nl",
             "department": "Werk- en inkomen",
             "function": "Inkomensconsulent zelfstandigen",
@@ -636,6 +647,7 @@
             }
         },
         {
+            "_id": "c8adf8f1-fc45-4ec5-944f-873f7a081b19",
             "user": "test02@kiss.gembur.nu",
             "department": "Burgerzaken",
             "function": "Baliemedewerker",
@@ -684,6 +696,7 @@
             }
         },
         {
+            "_id": "3195398c-8294-4a7f-94b2-6e1833598fd8",
             "user": "s.koendjibiharie@kiss.gembur.nl",
             "department": "Dienstverlening",
             "function": "Verbetermanager Sociaal Domein",
@@ -744,6 +757,7 @@
             }
         },
         {
+            "_id": "4e4c6acd-960c-4a73-a4df-f2ae28da4e8d",
             "user": "p.deboer@kiss.gembur.nl",
             "department": "VTH",
             "function": "Adviseur kapvergunningen",
