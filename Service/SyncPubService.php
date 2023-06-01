@@ -59,21 +59,18 @@ class SyncPubService
 
         $sourceConfig = $source->getConfiguration();
 
-        $response = $this->callService->call(
+        $response = $this->callService->getAllResults(
             $source,
             '/items',
-            'GET',
             $sourceConfig
         );
 
-        $results   = $this->callService->decodeResponse($source, $response);
-
         $responseItems = [];
-        foreach ($results['data'] as $result) {
+        foreach ($response as $result) {
             $synchronization = $this->syncService->findSyncBySource($source, $schema, $result['id']);
             $synchronization->setMapping($mapping);
             $synchronization = $this->syncService->synchronize($synchronization, $result);
-            
+
             $responseItems[] = $synchronization->getObject()->toArray();
         }
 
