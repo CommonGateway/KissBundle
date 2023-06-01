@@ -1,11 +1,11 @@
 {
     "https://vng.opencatalogi.nl/schemas/ztc.catalogus.schema.json": [
         {
-            "domein": "VRG",
-            "rsin": "999994207",
+            "domein": "kiss.gembur.nl",
+            "rsin": "807287684",
             "_id": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
-            "contactpersoonBeheerNaam": "Sytske van Hasselt",
-            "contactpersoonBeheerEmailadres": "sytsk@icatt.nl"
+            "contactpersoonBeheerNaam": "Daphne van Testen",
+            "contactpersoonBeheerEmailadres": "daphne@kiss.gembur.nl"
         }
     ],
     "https://vng.opencatalogi.nl/schemas/ztc.rolType.schema.json": [
@@ -201,12 +201,12 @@
         {
             "_id": "3bb9bccc-0619-4c66-905e-fc5f606b16b0",
             "identificatie": "ZAAK-1",
-            "bronorganisatie": "999994207",
+            "bronorganisatie": "807287684",
             "omschrijving": "Melding openbare ruimte",
             "toelichting": "Losse stoeptegel op het plein",
             "zaaktype": "5b880f19-3bfa-4a74-ae98-fc486642e731",
             "registratiedatum": "2022-12-16",
-            "verantwoordelijkeOrganisatie": "999994207",
+            "verantwoordelijkeOrganisatie": "807287684",
             "startdatum": "2022-12-16",
             "publicatiedatum": "2022-12-16",
             "vertrouwelijkheidaanduiding": "openbaar",
@@ -249,12 +249,12 @@
         },
         {
             "identificatie": "ZAAK-2",
-            "bronorganisatie": "999994207",
+            "bronorganisatie": "807287684",
             "omschrijving": "Aanvraag Bbz voor startende ondernemer",
             "toelichting": "Aanvrager wil vanuit uitkeringssituatie eigen onderneming beginnen",
             "zaaktype": "126ad23c-2d06-4b51-8fe2-0d259ee313bc",
             "registratiedatum": "2022-11-27",
-            "verantwoordelijkeOrganisatie": "999994207",
+            "verantwoordelijkeOrganisatie": "807287684",
             "startdatum": "2022-11-28",
             "publicatiedatum": "2022-12-16",
             "vertrouwelijkheidaanduiding": "vertrouwelijk",
@@ -300,7 +300,7 @@
                     "registratiedatum": "2022-11-27T09:44:22.811Z",
                     "aardRelatieWeergave": "Hoort bij, omgekeerd: kent",
                     "informatieobject": {
-                        "bronorganisatie": "999994207",
+                        "bronorganisatie": "807287684",
                         "creatiedatum": "2022-11-27",
                         "titel": "Contract 1",
                         "auteur": "Indiener",
@@ -324,7 +324,7 @@
                     "registratiedatum": "2022-11-27T09:44:22.811Z",
                     "aardRelatieWeergave": "Hoort bij, omgekeerd: kent",
                     "informatieobject": {
-                        "bronorganisatie": "999994207",
+                        "bronorganisatie": "807287684",
                         "creatiedatum": "2022-11-27",
                         "titel": "Contract 2",
                         "auteur": "Indiener",
@@ -348,7 +348,7 @@
                     "registratiedatum": "2022-11-27T09:44:22.811Z",
                     "aardRelatieWeergave": "Hoort bij, omgekeerd: kent",
                     "informatieobject": {
-                        "bronorganisatie": "999994207",
+                        "bronorganisatie": "807287684",
                         "creatiedatum": "2022-11-27",
                         "titel": "Contract 3",
                         "auteur": "Indiener",
@@ -370,12 +370,12 @@
         },
         {
             "identificatie": "ZAAK-3",
-            "bronorganisatie": "999994207",
+            "bronorganisatie": "807287684",
             "omschrijving": "Aanvraag IOAZ voor onderneming die wil stoppen met bedrijf",
             "toelichting": "gearchiveerde zaakAanvrager wil vanuit uitkeringssituatie eigen onderneming beginnen",
             "zaaktype": "126ad23c-2d06-4b51-8fe2-0d259ee313bc",
             "registratiedatum": "2022-11-21",
-            "verantwoordelijkeOrganisatie": "999994207",
+            "verantwoordelijkeOrganisatie": "807287684",
             "startdatum": "2022-11-21",
             "publicatiedatum": "2022-11-21",
             "vertrouwelijkheidaanduiding": "vertrouwelijk",
@@ -422,7 +422,7 @@
                     "registratiedatum": "2022-11-21T09:44:22.811Z",
                     "aardRelatieWeergave": "Hoort bij, omgekeerd: kent",
                     "informatieobject": {
-                        "bronorganisatie": "999994207",
+                        "bronorganisatie": "807287684",
                         "creatiedatum": "2022-11-27",
                         "titel": "Kopie kenteken 1",
                         "auteur": "Indiener",
@@ -446,7 +446,7 @@
                     "registratiedatum": "2022-11-21T09:44:22.811Z",
                     "aardRelatieWeergave": "Hoort bij, omgekeerd: kent",
                     "informatieobject": {
-                        "bronorganisatie": "999994207",
+                        "bronorganisatie": "807287684",
                         "creatiedatum": "2022-11-27",
                         "titel": "Kopie kenteken 2",
                         "auteur": "Indiener",
@@ -470,7 +470,7 @@
                     "registratiedatum": "2022-11-21T09:44:22.811Z",
                     "aardRelatieWeergave": "Hoort bij, omgekeerd: kent",
                     "informatieobject": {
-                        "bronorganisatie": "999994207",
+                        "bronorganisatie": "807287684",
                         "creatiedatum": "2022-11-27",
                         "titel": "Kopie kenteken 3",
                         "auteur": "Indiener",
@@ -492,12 +492,12 @@
         },
         {
             "identificatie": "ZAAK-4",
-            "bronorganisatie": "999994207",
+            "bronorganisatie": "807287684",
             "omschrijving": "Aanvraag omgevingsvergunning voor bouwen Bibob-plichtig",
             "toelichting": "Dit is een complexe bouwaanvraag met Bibob-toets. Daarom gaat de behandeltermijn verlengd worden met 6 wkn. Deadline wordt dan 11 oktober. De reden voor de vertraging is deels: het verzoek om aanvullende info vanuit de Bibob. En daarnaast het feit dat er met veel buitenlandse financiers wordt gewerkt, dit vraagt meer onderzoek",
             "zaaktype": "eb5f542f-b356-4e2d-bcb6-279320b34ac6",
             "registratiedatum": "2022-11-14",
-            "verantwoordelijkeOrganisatie": "999994207",
+            "verantwoordelijkeOrganisatie": "807287684",
             "startdatum": "2022-11-14",
             "publicatiedatum": "2022-11-14",
             "vertrouwelijkheidaanduiding": "openbaar",
