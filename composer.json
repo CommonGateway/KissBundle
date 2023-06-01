@@ -1,5 +1,5 @@
 {
-    "name": "klantinteractie-servicesysteem/kiss-bundle",
+    "name": "common-gateway/kiss-bundle",
     "description": "An example package for creating symfony flex bundles as plugins",
     "type" : "symfony-bundle",
 	"keywords" : [
@@ -32,8 +32,8 @@
 		}
 	},
 	"scripts": {
-		"post-package-install": "bin/console commongateway:install klantinteractie-servicesysteem/kiss-bundle",
-		"post-package-update": "bin/console commongateway:update klantinteractie-servicesysteem/kiss-bundle",
-		"post-package-uninstall": "bin/console commongateway:uninstall klantinteractie-servicesysteem/kiss-bundle"
+		"post-package-install": "bin/console commongateway:install common-gateway/kiss-bundle",
+		"post-package-update": "bin/console commongateway:update common-gateway/kiss-bundle",
+		"post-package-uninstall": "bin/console commongateway:uninstall common-gateway/kiss-bundle"
 	}
 }
