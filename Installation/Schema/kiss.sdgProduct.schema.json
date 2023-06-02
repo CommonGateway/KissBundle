@@ -8,8 +8,9 @@
       "url": {
         "type":"string",
         "format": "uri",
-        "nullable": true,
-        "description":"De unieke URL van dit object binnen deze API."
+        "description":"De unieke URL van dit object binnen deze API.",
+        "default": "{{ selfUrl(object) }}",
+        "readOnly": true
       },
       "upnLabel": {
         "type": "string",
