@@ -1,7 +1,8 @@
 {
     "https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json": [
         {
-            "user": "dabbasoglu@demodam.nl",
+            "_id": "868e6044-157f-4ee8-96b2-76370baf7171",
+            "user": "dabbasoglu@kiss.gembur.nl",
             "department": "Vergunningen",
             "function": "Specialist omgevingsvergunningen",
             "replacement": "Bert Bovenkerken",
@@ -10,20 +11,20 @@
             "contact": {
                 "telefoonnummers": [
                     {
-                        "telefoonnummer": "020 666 0003",
+                        "telefoonnummer": "0344 666 0003",
                         "naam": null
                     }
                 ],
                 "emails": [
                     {
-                        "email": "dabbasoglu@demodam.nl",
+                        "email": "dabbasoglu@kiss.gembur.nl",
                         "naam": null
                     }
                 ],
                 "achternaam": "Abbasoğlu",
                 "voorvoegselAchternaam": null,
                 "voornaam": "Dalal",
-                "bronorganisatie": "999994207"        
+                "bronorganisatie": "807287684"        
 
             },
             "availabilities": {
@@ -50,7 +51,8 @@
             }
         },
         {
-            "user": "syps@kiss.commonground.nu",
+            "_id": "f7435b1c-7c93-4e96-ac50-6140ead8891a",
+            "user": "daphne@kiss.gembur.nu",
             "department": "IV Dienstvelening en IT",
             "function": "Functioneel tester, functioneel ontwerper",
             "replacement": null,
@@ -59,7 +61,7 @@
             "contact": {
                 "telefoonnummers": [
                     {
-                        "telefoonnummer": "0206383068",
+                        "telefoonnummer": "03446383068",
                         "naam": null
                     },
                     {
@@ -69,18 +71,18 @@
                 ],
                 "emails": [
                     {
-                        "email": "sytske@icatt.nl",
+                        "email": "daphne@kiss.gembur.nl",
                         "naam": null
                     },
                     {
-                        "email": "syps@icatt.nl",
+                        "email": "daphne@kiss.gembur.nl",
                         "naam": null
                     }
                 ],
-                "achternaam": "Hasselt",
+                "achternaam": "Testen",
                 "voorvoegselAchternaam": "van",
-                "voornaam": "Sytske",
-                "bronorganisatie": "999994207"
+                "voornaam": "Daphne",
+                "bronorganisatie": "807287684"
             },
             "availabilities": {
                 "vrijdag": {
@@ -106,7 +108,8 @@
             }
         },
         {
-            "user": "jkuitenbrouwer@demodam.nl",
+            "_id": "67283c9c-2c11-4ac7-8490-e9fe19afc4cb",
+            "user": "jkuitenbrouwer@kiss.gembur.nl",
             "department": "Openbare ruimte",
             "function": "Planner openbare ruimte",
             "skills": "Werken in de openbare ruimte, kabels en leidingen, afstemmen graven in de grond",
@@ -115,20 +118,20 @@
             "contact": {
                 "telefoonnummers": [
                     {
-                        "telefoonnummer": "020 666 0002",
+                        "telefoonnummer": "0344 666 0002",
                         "naam": null
                     }
                 ],
                 "emails": [
                     {
-                        "email": "jkuitenbrouwer@demodam.nl",
+                        "email": "jkuitenbrouwer@kiss.gembur.nl",
                         "naam": null
                     }
                 ],
                 "achternaam": "Kuitenbrouwer",
                 "voorvoegselAchternaam": null,
                 "voornaam": "Jan",
-                "bronorganisatie": "999994207"
+                "bronorganisatie": "807287684"
             },
             "availabilities": {
                 "vrijdag": {
@@ -154,7 +157,8 @@
             }
         },
         {
-            "user": "f.delaBrioche@demodam.nl",
+            "_id": "67283c9c-2c11-4ac7-8490-e9fe19afc4cb",
+            "user": "f.delaBrioche@kiss.gembur.nl",
             "department": "Facilitaire diensten",
             "function": "Hoofd inkoop kantoorartikelen",
             "skills": "Inkoop en beheer kantoorartikelen. Mis je iets in de inventaris, laat het me weten. Dan kijken we wat we voor je kunnen doen.",
@@ -171,17 +175,17 @@
                 },
                 "emails": [
                     {
-                        "email": "f.delaBrioche@demodam.nl",
+                        "email": "f.delaBrioche@kiss.gembur.nl",
                         "naam": null
                     }
                 ],
                 "telefoonnummers": [
                     {
                         "naam": null,
-                        "telefoonnummer": "020 444 8888"
+                        "telefoonnummer": "0344 444 8888"
                     }
                 ],
-                "bronorganisatie": "999994207",
+                "bronorganisatie": "807287684",
                 "achternaam": "de la Brioche",
                 "voornaam": "Francine",
                 "voorvoegselAchternaam": null
@@ -210,7 +214,8 @@
             }
         },
         {
-            "user": "s.de.bruin@demodam.nl",
+            "_id": "cef4baaa-ca64-4b6f-8dde-0877d455e320",
+            "user": "s.de.bruin@kiss.gembur.nl",
             "department": "Burgerzaken",
             "function": "Baliemedewerker",
             "skills": "dienstverlening, burgerzaken",
@@ -233,23 +238,23 @@
                     },
                     {
                         "naam": null,
-                        "telefoonnummer": "020 543 9876"
+                        "telefoonnummer": "0344 543 9876"
                     }
                 ],
                 "emails": [
                     {
-                        "email": "saskia.de.bruin@demodam.nl",
+                        "email": "saskia.de.bruin@kiss.gembur.nl",
                         "naam": "Saskia de Bruin"
                     },
                     {
-                        "email": "s.de.bruin@demodam.nl",
+                        "email": "s.de.bruin@kiss.gembur.nl",
                         "naam": "Saskia de Bruin"
                     }                    
                 ],
                 "voornaam": "Saskia",
                 "voorvoegselAchternaam": "de",
                 "achternaam": "Bruin",
-                "bronorganisatie": "999994207"
+                "bronorganisatie": "807287684"
             },
             "availabilities": {
                 "maandag": {
@@ -275,7 +280,8 @@
             }
         },
         {
-            "user": "m.bounoun@demodam.nl",
+            "_id": "90894197-ceb3-417e-91af-91d33a899d06",
+            "user": "m.bounoun@kiss.gembur.nl",
             "department": "Burgerzaken",
             "function": "Beleidsmedewerker",
             "skills": "identificatiedocumenten, identiteitscontrole, digitalisering, eHerkenning",
@@ -298,19 +304,19 @@
                     },
                     {
                         "naam": null,
-                        "telefoonnummer": "020 345 6789"
+                        "telefoonnummer": "0344 345 6789"
                     }
                 ],
                 "emails": [
                     {
-                        "email": "mehmet.bounoun@demodam.nl",
+                        "email": "mehmet.bounoun@kiss.gembur.nl",
                         "naam": null
                     }
                 ],
                 "voornaam": "Mehmet",
                 "voorvoegselAchternaam": "",
                 "achternaam": "Bounoun",
-                "bronorganisatie": "999994207"
+                "bronorganisatie": "807287684"
             },
             "availabilities": {
                 "maandag": {
@@ -336,7 +342,194 @@
             }
         },
         {
-            "user": "j.tersteeege@demodam.nl",
+            "_id": "bbfa3d51-8977-4538-822a-a409881677ea",
+            "user": "y.cairo@kiss.gembur.nl",
+            "department": "Groenbeheer",
+            "function": "Beleidsmedewerker",
+            "skills": "onderhoud, digitalisering",
+            "replacement": "Johanna Tersteege",
+            "optionalProfilePicture": "https://cdn.vectorstock.com/i/1000x1000/51/05/male-profile-avatar-with-brown-hair-vector-12055105.webp",
+            "description": "-",
+            "contact": {
+                "adres": {
+                    "straatnaam": "Nieuwe Achtergracht",
+                    "huisnummer": 100,
+                    "huisletter": "",
+                    "huisnummertoevoeging": "",
+                    "postcode": "1018WT",
+                    "woonplaatsnaam": "Amsterdam"
+                },
+                "telefoonnummers": [
+                    {
+                        "naam": null,
+                        "telefoonnummer": "06 4452 9898"
+                    },
+                    {
+                        "naam": null,
+                        "telefoonnummer": "0344 745 6789"
+                    }
+                ],
+                "emails": [
+                    {
+                        "email": "y.cairo@kiss.gembur.nl",
+                        "naam": null
+                    }
+                ],
+                "voornaam": "Yann",
+                "voorvoegselAchternaam": "",
+                "achternaam": "Cairo",
+                "bronorganisatie": "807287684"
+            },
+            "availabilities": {
+                "maandag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "dinsdag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "woensdag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "donderdag": {
+                    "ochtend": false,
+                    "middag": true
+                },
+                "vrijdag": {
+                    "ochtend": false,
+                    "middag": false
+                }
+            }
+        },
+        {
+            "_id": "7ddb9616-1513-450c-b9a3-ad6d453fa78d",
+            "user": "g.jongepier@kiss.gembur.nl",
+            "department": "Juridische zaken",
+            "function": "Medewerker juridische zaken",
+            "skills": "jurist",
+            "replacement": "Johanna Tersteege",
+            "optionalProfilePicture": "https://cdn.vectorstock.com/i/1000x1000/51/05/male-profile-avatar-with-brown-hair-vector-12055105.webp",
+            "description": "-",
+            "contact": {
+                "adres": {
+                    "straatnaam": "Nieuwe Achtergracht",
+                    "huisnummer": 100,
+                    "huisletter": "",
+                    "huisnummertoevoeging": "",
+                    "postcode": "1018WT",
+                    "woonplaatsnaam": "Amsterdam"
+                },
+                "telefoonnummers": [
+                    {
+                        "naam": null,
+                        "telefoonnummer": "06 1552 9898"
+                    },
+                    {
+                        "naam": null,
+                        "telefoonnummer": "0344 315 6789"
+                    }
+                ],
+                "emails": [
+                    {
+                        "email": "g.jongepier@kiss.gembur.nl",
+                        "naam": null
+                    }
+                ],
+                "voornaam": "Giovanni",
+                "voorvoegselAchternaam": "",
+                "achternaam": "Jongepier",
+                "bronorganisatie": "807287684"
+            },
+            "availabilities": {
+                "maandag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "dinsdag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "woensdag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "donderdag": {
+                    "ochtend": false,
+                    "middag": true
+                },
+                "vrijdag": {
+                    "ochtend": false,
+                    "middag": false
+                }
+            }
+        },
+        {
+            "_id": "97e3735b-72c5-4091-83e8-72edfbc17b03",
+            "user": "s.bakhuis@kiss.gembur.nl",
+            "department": "Overlast",
+            "function": "Overlastmedewerker",
+            "skills": "Contact, probleemoplossend vermogen",
+            "replacement": "Johanna Tersteege",
+            "optionalProfilePicture": "https://cdn.vectorstock.com/i/1000x1000/51/05/male-profile-avatar-with-brown-hair-vector-12055105.webp",
+            "description": "-",
+            "contact": {
+                "adres": {
+                    "straatnaam": "Nieuwe Achtergracht",
+                    "huisnummer": 100,
+                    "huisletter": "",
+                    "huisnummertoevoeging": "",
+                    "postcode": "1018WT",
+                    "woonplaatsnaam": "Amsterdam"
+                },
+                "telefoonnummers": [
+                    {
+                        "naam": null,
+                        "telefoonnummer": "06 1453 9898"
+                    },
+                    {
+                        "naam": null,
+                        "telefoonnummer": "0344 3466789"
+                    }
+                ],
+                "emails": [
+                    {
+                        "email": "s.bakhuis@kiss.gembur.nl",
+                        "naam": null
+                    }
+                ],
+                "voornaam": "Shay",
+                "voorvoegselAchternaam": "",
+                "achternaam": "Bakhuis",
+                "bronorganisatie": "807287684"
+            },
+            "availabilities": {
+                "maandag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "dinsdag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "woensdag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "donderdag": {
+                    "ochtend": false,
+                    "middag": true
+                },
+                "vrijdag": {
+                    "ochtend": false,
+                    "middag": false
+                }
+            }
+        },
+        {
+            "_id": "79932c39-017b-4aac-9ffa-af4a5c734b0a",
+            "user": "j.tersteeege@kiss.gembur.nl",
             "department": "Burgerzaken",
             "function": "Baliemedewerker",
             "skills": "Bij de balie hou ik me vooral bezig met het uitleveren van aktes uit de burgerlijke stand, en met inschrijven van nieuwe bewoners. Ik weet alles van het systeem waarmee we akte ophalen. Daarnaast ben ik momenteel bezig met een opleiding tot eHerkenning specialist.",
@@ -359,19 +552,19 @@
                     },
                     {
                         "naam": null,
-                        "telefoonnummer": "020 234 5678"
+                        "telefoonnummer": "0344 234 5678"
                     }
                 ],
                 "emails": [
                     {
-                        "email": "johanne.tersteege@demodam.nl",
+                        "email": "johanne.tersteege@kiss.gembur.nl",
                         "naam": "Johanne Tersteege"
                     }
                 ],
                 "voornaam": "Johanne",
                 "voorvoegselAchternaam": "",
                 "achternaam": "Tersteege",
-                "bronorganisatie": "999994207"
+                "bronorganisatie": "807287684"
             },
             "availabilities": {
                 "maandag": {
@@ -397,7 +590,8 @@
             }
         },
         {
-            "user": "rintveld@demodam.nl",
+            "_id": "fc2acae2-8dd7-434a-81d7-08875fed9413",
+            "user": "rintveld@kiss.gembur.nl",
             "department": "Werk- en inkomen",
             "function": "Inkomensconsulent zelfstandigen",
             "skills": "Bbz, Ioaz, tozo alle rondes, TVL 2020, 2021 en 2022. Ik help zelfstandige ondernemers in alle fases van hun onderneming.",
@@ -406,7 +600,7 @@
             "contact": {
                 "telefoonnummers": [
                     {
-                        "telefoonnummer": "020 666 0001",
+                        "telefoonnummer": "0344 666 0001",
                         "naam": null
                     },
                     {
@@ -416,18 +610,18 @@
                 ],
                 "emails": [
                     {
-                        "email": "rintveld@demodam.nl",
+                        "email": "rintveld@kiss.gembur.nl",
                         "naam": null
                     },
                     {
-                        "email": "robyn.veld@demodam.nl",
+                        "email": "robyn.veld@kiss.gembur.nl",
                         "naam": null
                     }
                 ],
                 "achternaam": "Veld",
                 "voorvoegselAchternaam": "in 't",
                 "voornaam": "Robyn",
-                "bronorganisatie": "999994207"
+                "bronorganisatie": "807287684"
             },
             "availabilities": {
                 "maandag": {
@@ -453,8 +647,9 @@
             }
         },
         {
-            "user": "test02@kiss.commonground.nu",
-            "department": "Burgerzaken ",
+            "_id": "c8adf8f1-fc45-4ec5-944f-873f7a081b19",
+            "user": "test02@kiss.gembur.nu",
+            "department": "Burgerzaken",
             "function": "Baliemedewerker",
             "skills": "dienstverlening, burgerzaken, identiteitsbewijzen",
             "replacement": "Michael Jackson",
@@ -462,20 +657,20 @@
             "contact": {
                 "telefoonnummers": [
                     {
-                        "telefoonnummer": "020 666 0005",
+                        "telefoonnummer": "0344 666 0005",
                         "naam": null
                     }
                 ],
                 "emails": [
                     {
-                        "email": "qjones@demodam.nl",
+                        "email": "qjones@kiss.gembur.nl",
                         "naam": "e-mailadres 1"
                     }
                 ],
                 "achternaam": "Jones",
                 "voorvoegselAchternaam": null,
                 "voornaam": "Quincy",
-                "bronorganisatie": "999994207"
+                "bronorganisatie": "807287684"
             },
             "availabilities": {
                 "vrijdag": {
@@ -501,7 +696,8 @@
             }
         },
         {
-            "user": "s.koendjibiharie@demodam.nl",
+            "_id": "3195398c-8294-4a7f-94b2-6e1833598fd8",
+            "user": "s.koendjibiharie@kiss.gembur.nl",
             "department": "Dienstverlening",
             "function": "Verbetermanager Sociaal Domein",
             "skills": "Sociaal domein, armoedevoorzieningen, inkomensondersteuning. Ik hou me veel bezig met inkomensondersteuning voor startende ondernemers, en het behandelen van Bbz-aanvragen",
@@ -518,24 +714,24 @@
                 },
                 "emails": [
                     {
-                        "email": "sum.koendjibiharie@demodam.nl",
+                        "email": "sum.koendjibiharie@kiss.gembur.nl",
                         "naam": null
                     },
                     {
-                        "email": "s.koendjibiharie@demodam.nll",
+                        "email": "s.koendjibiharie@kiss.gembur.nll",
                         "naam": "Sumirno Koendjibiharie"
                     }
                 ],
                 "telefoonnummers": [
                     {
                         "naam": null,
-                        "telefoonnummer": "020 345 6789"
+                        "telefoonnummer": "0344 345 6789"
                     }
                 ],
                 "voornaam": "Sumirno",
                 "voorvoegselAchternaam": null,
                 "achternaam": "Koendjibiharie",
-                "bronorganisatie": "999994207"
+                "bronorganisatie": "807287684"
             },
             "availabilities": {
                 "maandag": {
@@ -561,7 +757,8 @@
             }
         },
         {
-            "user": "p.deboer@demodam.nl",
+            "_id": "4e4c6acd-960c-4a73-a4df-f2ae28da4e8d",
+            "user": "p.deboer@kiss.gembur.nl",
             "department": "VTH",
             "function": "Adviseur kapvergunningen",
             "replacement": "Boris Nooteboom", 
@@ -571,14 +768,14 @@
             "contact": {
                 "emails": [
                     {
-                        "email": "p.deboer@demodam.nl",
+                        "email": "p.deboer@kiss.gembur.nl",
                         "naam": null
                     }
                 ],
                 "telefoonnummers": [
                     {
                         "naam": null,
-                        "telefoonnummer": "020 334 4555"
+                        "telefoonnummer": "0344 334 4555"
                     }
                 ],
                 "adres": {
@@ -592,7 +789,7 @@
                 "voornaam": "Pjotr",
                 "voorvoegselAchternaam": "de",
                 "achternaam": "Boer",
-                "bronorganisatie": "999994207"
+                "bronorganisatie": "807287684"
              },
             "availabilities": {
                 "maandag": {

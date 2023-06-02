@@ -2,7 +2,7 @@
     "https://klantenBundle.commonground.nu/klant.klant.schema.json": [
         {
             "_id": "4c90e5fa-b1ea-4106-8e3d-9804826f9678",
-            "bronorganisatie": "999994207",
+            "bronorganisatie": "807287684",
             "klantnummer": "00000101",
             "bedrijfsnaam": null,
             "functie": null,
@@ -28,7 +28,7 @@
         },
         {
             "_id": "afaa1da1-c2ed-417a-9ca0-2c9d234af45b",
-            "bronorganisatie": "999994207",
+            "bronorganisatie": "807287684",
             "klantnummer": "00000102",
             "bedrijfsnaam": null,
             "functie": null,
@@ -45,7 +45,7 @@
         },
         {
             "_id": "d6b21bd1-7c18-4dc8-bc3e-44b7402df1f3",
-            "bronorganisatie": "999994207",
+            "bronorganisatie": "807287684",
             "klantnummer": "00000103",
             "bedrijfsnaam": null,
             "functie": null,
@@ -64,7 +64,7 @@
         },
         {
             "_id": "d40a65c6-7009-469e-a106-9a6adf88ca3e",
-            "bronorganisatie": "999994207",
+            "bronorganisatie": "807287684",
             "klantnummer": "00000104",
             "bedrijfsnaam": "Bakkerij  het gulden broodje",
             "functie": null,
@@ -91,7 +91,7 @@
         },
         {
             "_id": "9f41f2e7-5937-4345-b3d8-a1d12561c372",
-            "bronorganisatie": "999994207",
+            "bronorganisatie": "807287684",
             "klantnummer": "00000105",
             "bedrijfsnaam": null,
             "functie": null,
@@ -101,7 +101,7 @@
             "telefoonnummers": [],
             "emails": [
                 {
-                    "email": "icatttest+roza@gmail.com",
+                    "email": "roza@kiss.gembur.nl",
                     "naam": "e-mailadres 1"
                 }
             ],
@@ -113,7 +113,7 @@
         },
         {
             "_id": "5f9f74da-0afb-49ff-84b7-573601295fc3",
-            "bronorganisatie": "999994207",
+            "bronorganisatie": "807287684",
             "klantnummer": "00000106",
             "bedrijfsnaam": null,
             "functie": null,
@@ -123,7 +123,7 @@
             "telefoonnummers": [
                 {
                     "naam": "telefoonnummer 1",
-                    "telefoonnummer": "0656785678"
+                    "telefoonnummer": "0344 56785678"
                 }
             ],
             "emails": [],
@@ -132,7 +132,7 @@
         },
         {
             "_id": "5972d717-17d8-4712-8c79-16bf3a5a3b44",
-            "bronorganisatie": "999994207",
+            "bronorganisatie": "807287684",
             "klantnummer": "00000223",
             "bedrijfsnaam": null,
             "functie": null,
@@ -142,12 +142,12 @@
             "telefoonnummers": [
                 {
                     "naam": null,
-                    "telefoonnummer": "020 6383068"
+                    "telefoonnummer": "0344 6383068"
                 }
             ],
             "emails": [
                 {
-                    "email": "icatttest+samtee@gmail.com",
+                    "email": "samtee@kiss.gembur.com",
                     "naam": "e-mailadres 1"
                 }
             ],
@@ -158,7 +158,7 @@
     "https://klantenBundle.commonground.nu/klant.klantContactmoment.schema.json": [
         {
             "contactmoment": {
-                "bronorganisatie": "999994207",
+                "bronorganisatie": "807287684",
                 "registratiedatum": "2022-08-04T10:47:00+00:00",
                 "startdatum": "2022-08-04T10:42:00+00:00",
                 "einddatum": "2022-08-04T10:47:00+00:00",
@@ -173,7 +173,7 @@
         },
         {
             "contactmoment": {
-                "bronorganisatie": "999994207",
+                "bronorganisatie": "807287684",
                 "startdatum": "2022-08-04T10:42:00+00:00",
                 "registratiedatum": "2022-08-04T10:47:00+00:00",
                 "einddatum": "2022-08-04T10:47:00+00:00",
@@ -194,7 +194,7 @@
         },
         {
             "contactmoment": {
-                "bronorganisatie": "999994207",
+                "bronorganisatie": "807287684",
                 "startdatum": "2022-08-04T10:42:00+00:00",
                 "registratiedatum": "2022-08-04T10:47:00+00:00",
                 "einddatum": "2022-08-04T10:47:00+00:00",
@@ -218,7 +218,7 @@
         {
             "contactmoment": {
                 "afwijkendOnderwerp": "sticker of o-document paspoort",
-                "bronorganisatie": "999994207",
+                "bronorganisatie": "807287684",
                 "einddatum": "2022-08-04T10:47:00+00:00",
                 "initiatiefnemer": "klant",
                 "kanaal": "telefoon",
@@ -249,7 +249,7 @@
     "https://klantenBundle.commonground.nu/klant.contactmoment.schema.json": [
         {
             "_id": "8f0fa8ea-aec1-4d87-9805-e9799442f187",
-            "bronorganisatie": "999994207",
+            "bronorganisatie": "807287684",
             "objectcontactmomenten": ["d2e74a0b-08f1-43f8-9a79-cd010a79f228"],
             "klantcontactmomenten": ["3d8bfba8-9a85-4304-9be7-a883010ed6bd"],
             "registratiedatum": "2022-08-04T10:47:00+00:00",
@@ -264,7 +264,7 @@
         {
             "_id": "7dbf76dd-193b-4e51-a258-c02ef4ee44e3",
             "afwijkendOnderwerp": "sticker of o-document paspoort",
-            "bronorganisatie": "999994207",
+            "bronorganisatie": "807287684",
             "einddatum": "2022-08-04T10:47:00+00:00",
             "gespreksId": null,
             "initiatiefnemer": "klant",
