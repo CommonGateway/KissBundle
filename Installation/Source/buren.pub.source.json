@@ -1,5 +1,5 @@
 {
-    "title": "OpenPub API",
+    "title": "Buren OpenPub API",
     "$id": "https://buren.nl/source/buren.pub.source.json",
     "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
     "version": "0.0.1",

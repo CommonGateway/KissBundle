@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "passTrough": true,
   "mapping": {
-    "name": "{{name|trans({'Algemeen': 'Nieuws', 'Nieuwsbericht': 'Werkinstructie'}, '', 'en')}}",
-    "slug": "{{name|trans({'algemeen': 'nieuws', 'nieuwsbericht': 'werkinstructie'}, '', 'en')}}"
+    "name": "{{name|trans({'Algemeen': 'Nieuws', 'Gemeenteraad': 'Werkinstructie'}, '', 'en')}}",
+    "slug": "{{name|trans({'algemeen': 'nieuws', 'Gemeenteraad': 'werkinstructie'}, '', 'en')}}"
   }
 }
