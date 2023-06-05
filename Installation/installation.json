@@ -33,6 +33,12 @@
           "burenSource": "https://buren.nl/source/buren.pub.source.json",
           "pubMapping": "https://buren.nl/mapping/buren.pubInMapping.mapping.json"
         }
+      },
+      {
+        "name": "NotificationAction",
+        "reference": "https://kissdevelopment.commonground.nu/action/kiss.HandelsRegisterSearchAction.action.json",
+        "actionHandler": "CommonGateway\\CoreBundle\\ActionHandler\\NotificationHandler",
+        "listens": ["kiss.test.notification"]
       }
     ],
     "fixConfigRef": [
@@ -59,6 +65,16 @@
       }
     ],
     "schemas": [
+      {
+        "reference": "https://kissdevelopment.commonground.nu/notification.schema.json",
+        "path": "notifications",
+        "methods": [
+          "POST"
+        ],
+        "throws": [
+          "kiss.test.notification"
+        ]
+      },
       {
         "reference": "https://kissdevelopment.commonground.nu/kiss.pubPublicatie.schema.json",
         "path": "kiss_openpub_pub",

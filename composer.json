@@ -17,11 +17,7 @@
     "minimum-stability" : "dev",
     "require": {
         "php": ">=7.4",
-		"commongateway/corebundle": "dev-feature/DIT-145/notifications",
-		"common-gateway/brp-bundle": ">=0.1.2",
-		"common-gateway/zgw-bundle": "~0.1.33",
-		"common-gateway/klanten-bundle": ">=0.1.4",
-        "common-gateway/kvk-bundle": ">=0.1.2"
+		"commongateway/corebundle": "dev-feature/DIT-145/notifications"
 	},
 	"require-dev" : {
 		"symfony/dependency-injection" : "~3.4|~4.1|~5.0"
