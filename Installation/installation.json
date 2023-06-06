@@ -38,7 +38,7 @@
         "name": "NotificationAction",
         "reference": "https://kissdevelopment.commonground.nu/action/kiss.HandelsRegisterSearchAction.action.json",
         "actionHandler": "CommonGateway\\CoreBundle\\ActionHandler\\NotificationHandler",
-        "listens": ["kiss.test.notification"]
+        "listens": ["kiss.notification"]
       }
     ],
     "fixConfigRef": [
@@ -69,10 +69,11 @@
         "reference": "https://kissdevelopment.commonground.nu/notification.schema.json",
         "path": "notifications",
         "methods": [
-          "POST"
+          "POST",
+          "GET"
         ],
         "throws": [
-          "kiss.test.notification"
+          "kiss.notification"
         ]
       },
       {
