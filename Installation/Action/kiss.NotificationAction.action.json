@@ -4,6 +4,10 @@
     "$schema": "https://docs.commongateway.nl/schemas/Action.schema.json",
     "version": "0.0.1",
     "listens": ["kiss.notification"],
+    "conditions":
+    {
+        "==": [1, 1]
+    },
     "class": "CommonGateway\\CoreBundle\\ActionHandler\\NotificationHandler",
     "configuration": {
         "urlLocation": "body.resourceUrl",
