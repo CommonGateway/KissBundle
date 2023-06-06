@@ -1,0 +1,25 @@
+{
+  "title": "SyncRollenRoxitAction",
+  "$id": "https://kissdevelopment.commonground.nu/action/kiss.SyncRollenRoxitAction.action.json",
+  "$schema": "https://docs.commongateway.nl/schemas/Action.schema.json",
+  "version": "0.0.1",
+  "listens": [
+    "kiss.roxit.listens"
+  ],
+  "conditions": {
+    "==": [
+      1,
+      1
+    ]
+  },
+  "class": "App\\ActionHandler\\SynchronizationCollectionHandler",
+  "configuration": {
+      "location": "/rollen",
+      "source": "https://buren.nl/source/buren.roxitzrc.source.json",
+      "entity": "https://vng.opencatalogi.nl/schemas/zrc.rol.schema.json",
+      "apiSource": "{\"location\":{\"objects\":\"results\",\"object\":\"#\",\"idField\":\"uuid\",\"dateChangedField\":\"publicatiedatum\"},\"sourcePaginated\":true,\"syncFromList\":true,\"sourceLeading\":true,\"mappingOut\":[],\"translationsIn\":[],\"translationsOut\":[],\"skeletonIn\":[],\"skeletonOut\":[],\"collectionDelete\":true}",
+      "replaceTwigLocation": "objectEntityData",
+      "useDataFromCollection": true,
+      "owner": ""
+  }
+}

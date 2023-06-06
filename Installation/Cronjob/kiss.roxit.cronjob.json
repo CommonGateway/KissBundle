@@ -1,0 +1,11 @@
+{
+    "title": "Roxit sync",
+    "$id": "https://kissdevelopment.commonground.nu/cronjob/kiss.roxit.cronjob.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Cronjob.schema.json",
+    "version": "0.0.1",
+    "description": "Cronjob for roxit actions.",
+    "crontab": "*/5 * * * *",
+    "throws": [
+        "kiss.roxit.listens"
+    ]
+}

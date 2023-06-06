@@ -1,0 +1,11 @@
+{
+    "title": "Decos sync",
+    "$id": "https://kissdevelopment.commonground.nu/cronjob/kiss.decos.cronjob.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Cronjob.schema.json",
+    "version": "0.0.1",
+    "description": "Cronjob for decos actions.",
+    "crontab": "*/5 * * * *",
+    "throws": [
+        "kiss.decos.listens"
+    ]
+}
