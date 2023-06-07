@@ -1,0 +1,42 @@
+{
+  "title": "zrcSourceOutBody",
+  "$id": "https://buren.nl/mapping/buren.zrcSourceOutBody.mapping.json",
+  "$schema": "https://docs.commongateway.nl/schemas/Mapping.schema.json",
+  "version": "0.0.1",
+  "passTrough": false,
+  "mapping": {
+    "identificatie": "identificatie",
+    "bronorganisatie": "111222333",
+    "omschrijving": "omschrijving",
+    "toelichting": "toelichting",
+    "zaaktype": "https://open-zaak.test.buren.opengem.nl/catalogi/api/v1/zaaktypen/070e9270-339d-4448-8fb4-e2fc9d38d59d",
+    "registratiedatum": "registratiedatum",
+    "verantwoordelijkeOrganisatie": "verantwoordelijkeOrganisatie",
+    "startdatum": "startdatum",
+    "einddatumGepland": "einddatumGepland",
+    "uiterlijkeEinddatumAfdoening": "uiterlijkeEinddatumAfdoening",
+    "publicatiedatum": "publicatiedatum",
+    "communicatiekanaal": "communicatiekanaal",
+    "productenOfDiensten": "productenOfDiensten",
+    "vertrouwelijkheidaanduiding": "vertrouwelijkheidaanduiding",
+    "betalingsindicatie": "betalingsindicatie",
+    "zaakgeometrie": "zaakgeometrie",
+    "verlenging": "verlenging",
+    "opschorting": "opschorting",
+    "selectielijstklasse": "selectielijstklasse",
+    "hoofdzaak": "hoofdzaak",
+    "relevanteAndereZaken": "relevanteAndereZaken",
+    "kenmerken": "kenmerken",
+    "archiefnominatie": "archiefnominatie",
+    "archiefstatus": "archiefstatus",
+    "archiefactiedatum": "archiefactiedatum"
+  },
+  "cast": {
+    "registratiedatum": "unsetIfValue==",
+    "communicatiekanaal": "unsetIfValue==",
+    "vertrouwelijkheidaanduiding": "unsetIfValue==",
+    "betalingsindicatie": "unsetIfValue==",
+    "selectielijstklasse": "unsetIfValue==",
+    "archiefstatus": "unsetIfValue=="
+  }
+}
