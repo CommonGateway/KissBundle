@@ -14,6 +14,12 @@
       "https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json"
     ]
   },
+  "schemas": [
+    {
+      "reference": "https://vng.opencatalogi.nl/schemas/zrc.zaak.schema.json",
+      "defaultSource": "https://buren.nl/source/buren.zrc.source.json"
+    }
+  ],
   "actions": {
     "handlers": [
       {
@@ -33,6 +39,13 @@
           "burenSource": "https://buren.nl/source/buren.pub.source.json",
           "pubMapping": "https://buren.nl/mapping/buren.pubInMapping.mapping.json"
         }
+      },
+      {
+        "name": "ObjectSyncAction",
+        "reference": "https://kissdevelopment.commonground.nu/action/ObjectSync.action.json",
+        "actionHandler": "CommonGateway\\CoreBundle\\ActionHandler\\ObjectSyncHandler",
+        "listens": ["commongateway.object.sync"],
+        "version": "0.0.1"
       }
     ],
     "fixConfigRef": [
