@@ -1,0 +1,17 @@
+{
+    "title": "SyncPubActionBuren",
+    "$id": "https://kissdevelopment.commonground.nu/action/buren.SyncPubAction.action.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Action.schema.json",
+    "version": "0.0.5",
+    "listens": ["kiss.default.listens"],
+    "conditions":
+    {
+        "==": [1, 1]
+    },
+    "class": "Kiss\\KissBundle\\ActionHandler\\SyncPubHandler",
+    "configuration": {
+        "pubSchema": "https://kissdevelopment.commonground.nu/kiss.pubPublicatie.schema.json",
+        "burenSource": "https://buren.nl/source/buren.pub.source.json",
+        "pubMapping": "https://buren.nl/mapping/buren.pubInMapping.mapping.json"
+    }
+}

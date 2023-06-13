@@ -21,18 +21,6 @@
         "reference": "https://kissdevelopment.commonground.nu/action/kiss.HandelsRegisterSearchAction.action.json",
         "actionHandler": "Kiss\\KissBundle\\ActionHandler\\HandelsRegisterSearchHandler",
         "listens": ["commongateway.response.pre"]
-      },
-      {
-        "name": "SyncPubAction",
-        "reference": "https://kissdevelopment.commonground.nu/action/buren.SyncPubAction.action.json",
-        "actionHandler": "Kiss\\KissBundle\\ActionHandler\\SyncPubHandler",
-        "listens": ["kiss.default.listens"],
-        "version": "0.0.4",
-        "configuration": {
-          "pubSchema": "https://kissdevelopment.commonground.nu/kiss.pubPublicatie.schema.json",
-          "burenSource": "https://buren.nl/source/buren.pub.source.json",
-          "pubMapping": "https://buren.nl/mapping/buren.pubInMapping.mapping.json"
-        }
       }
     ],
     "fixConfigRef": [
@@ -59,6 +47,17 @@
       }
     ],
     "schemas": [
+      {
+        "reference": "https://kissdevelopment.commonground.nu/notification.schema.json",
+        "path": "notifications",
+        "methods": [
+          "POST",
+          "GET"
+        ],
+        "throws": [
+          "kiss.notification"
+        ]
+      },
       {
         "reference": "https://kissdevelopment.commonground.nu/kiss.pubPublicatie.schema.json",
         "path": "kiss_openpub_pub",
