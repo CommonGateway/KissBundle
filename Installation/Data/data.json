@@ -7,6 +7,22 @@
             "name": "Werkinstructie"
         }
     ],
+	"https://klantenBundle.commonground.nu/klant.klant.schema.json": [
+		{
+			"_id": "85acb6b2-1b7c-4441-aaa9-6e0e0122d301",
+			"bronorganisatie": "000000000",
+			"klantnummer": "00000000",
+			"bedrijfsnaam": null,
+			"functie": "ANONYMOUS_USER",
+			"achternaam": "Persoon",
+			"voornaam": "Anoniem",
+			"voorvoegselAchternaam": null,
+			"telefoonnummers": [],
+			"emails": [],
+			"adressen": [],
+			"subjectType": "natuurlijk_persoon"
+		}
+	],
     "https://kissdevelopment.commonground.nu/kiss.resultaatypeomschrijvinggeneriek.schema.json": [
         {
 			"omschrijving": "Contactverzoek",
