@@ -3,6 +3,7 @@ name: "KissBundle"
 url: "https://github.com/CommonGateway/KissBundle"
 releaseDate: "2022-10-01"
 softwareType: addon
+applicationSuite: "Kiss Application"
 
 platforms:
   - web
