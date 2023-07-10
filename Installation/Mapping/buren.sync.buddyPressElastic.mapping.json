@@ -6,7 +6,7 @@
   "passTrough": false,
   "mapping": {
     "object": "{{ map('https://buren.nl/mapping/buren.buddyPress.mapping.json',object)|json_encode }}",
-    "object_meta": "{{ object.yoast_head_json.title }}<br>{% for graph in attribute(yoast_head_json.schema, '@graph') %}{% if attribute(graph, '@type') == 'Organization' %}{{ graph.name }}{% endif %}{% endfor %}",
+    "object_meta": "{{ object.yoast_head_json.title }}<br>{% for graph in attribute(object.yoast_head_json.schema, '@graph') %}{% if attribute(graph, '@type') == 'Organization' %}{{ graph.name }}{% endif %}{% endfor %}",
     "title": "object.name",
     "self": "object.link",
     "id": "smoelenboek_{{ object.id }}",
