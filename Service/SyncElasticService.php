@@ -14,7 +14,7 @@ use Psr\Cache\CacheException;
 use Psr\Cache\InvalidArgumentException;
 use Symfony\Component\HttpFoundation\Response;
 
-class SyncSDGService
+class SyncElasticService
 {
     private EntityManagerInterface $entityManager;
     private GatewayResourceService $resourceService;
@@ -48,7 +48,7 @@ class SyncSDGService
      *
      * @return array
      */
-    public function syncSDGHandler(array $data, array $configuration): array
+    public function syncElasticHandler(array $data, array $configuration): array
     {
         $this->data = $data;
         $this->configuration = $configuration;

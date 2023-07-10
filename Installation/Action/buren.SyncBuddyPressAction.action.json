@@ -9,7 +9,7 @@
   ],
   "throws": [],
   "conditions": [],
-  "class": "Kiss\\KissBundle\\ActionHandler\\SyncSDGHandler",
+  "class": "Kiss\\KissBundle\\ActionHandler\\SyncElasticHandler",
   "priority": 0,
   "async": false,
   "configuration": {

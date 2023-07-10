@@ -1,7 +1,7 @@
 {
   "$id": "https://kissdevelopment.commonground.nu/action/buren.SyncSDGAction.action.json",
   "$schema": "https://docs.commongateway.nl/schemas/Action.schema.json",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "SyncSDGAction",
   "description": "Syncs the SDG+ to elasticSearch",
   "listens": [
@@ -9,7 +9,7 @@
   ],
   "throws": [],
   "conditions": [],
-  "class": "Kiss\\KissBundle\\ActionHandler\\SyncSDGHandler",
+  "class": "Kiss\\KissBundle\\ActionHandler\\SyncElasticHandler",
   "priority": 0,
   "async": false,
   "configuration": {
