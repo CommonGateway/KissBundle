@@ -4,18 +4,18 @@ namespace Kiss\KissBundle\ActionHandler;
 
 use Kiss\KissBundle\Service\HandelsRegisterSearchService;
 use Kiss\KissBundle\Service\SyncPubService;
-use Kiss\KissBundle\Service\SyncSDGService;
+use Kiss\KissBundle\Service\SyncElasticService;
 use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
 use Twig\Error\LoaderError;
 use Twig\Error\RuntimeError;
 use Twig\Error\SyntaxError;
 use CommonGateway\CoreBundle\ActionHandler\ActionHandlerInterface;
 
-class SyncSDGHandler implements ActionHandlerInterface
+class SyncElasticHandler implements ActionHandlerInterface
 {
-    private SyncSDGService $service;
+    private SyncElasticService $service;
 
-    public function __construct(SyncSDGService $service)
+    public function __construct(SyncElasticService $service)
     {
         $this->service = $service;
     }
@@ -71,6 +71,6 @@ class SyncSDGHandler implements ActionHandlerInterface
      */
     public function run(array $data, array $configuration): array
     {
-        return $this->service->syncSDGHandler($data, $configuration);
+        return $this->service->syncElasticHandler($data, $configuration);
     }
 }
