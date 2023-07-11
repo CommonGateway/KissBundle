@@ -2,8 +2,6 @@
 
 namespace Kiss\KissBundle\ActionHandler;
 
-use Kiss\KissBundle\Service\HandelsRegisterSearchService;
-use Kiss\KissBundle\Service\SyncPubService;
 use Kiss\KissBundle\Service\SyncElasticService;
 use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
 use Twig\Error\LoaderError;
@@ -30,7 +28,7 @@ class SyncElasticHandler implements ActionHandlerInterface
         return [
             '$id'        => 'https://kissdevelopment.commonground.nu/actionHandler/kiss.SyncPubAction.actionHandler.json',
             '$schema'    => 'https://docs.commongateway.nl/schemas/ActionHandler.schema.json',
-            'title'      => 'SyncPubHandler',
+            'title'      => 'SyncElasticHandler',
             'description'=> 'Handles the sync for pub.',
             'required'   => [],
             'properties' => [
@@ -60,7 +58,7 @@ class SyncElasticHandler implements ActionHandlerInterface
     }
 
     /**
-     * This function runs the SyncPub service plugin.
+     * This function runs the SyncElastic service plugin.
      *
      * @param array $data          The data from the call
      * @param array $configuration The configuration of the action
