@@ -1,0 +1,19 @@
+{
+  "title": "Sync BuddyPress Mapping",
+  "$id": "https://buren.nl/mapping/buren.buddyPress.mapping.json",
+  "$schema": "https://docs.commongateway.nl/schemas/Mapping.schema.json",
+  "version": "0.0.1",
+  "passTrough": false,
+  "mapping": {
+    "user": "slug",
+    "contact.bronorganisatie": "",
+    "contact.bedrijfsnaam": "{% for graph in attribute(yoast_head_json.schema, '@graph') %}{% if attribute(graph, '@type') == 'Organization' %}{{ graph.name }}{% endif %}{% endfor %}",
+    "contact.functie": "yoast_head_json.title",
+    "contact.voornaam": "{{ name|split(' ', 3)|first }}",
+    "contact.voorvoegselAchternaam": "{% if name|split(' ', 3)|length == 3 %}{{ name|split(' ', 3)[1] }}{% endif %}",
+    "contact.achternaam": "{% if name|split(' ', 3)|length > 1 %}{{ name|split(' ', 3)|last }}{% endif %}",
+    "contact.websiteUrl": "link",
+    "department": "{% for graph in attribute(yoast_head_json.schema, '@graph') %}{% if attribute(graph, '@type') == 'Organization' %}{{ graph.name }}{% endif %}{% endfor %}",
+    "function": "yoast_head_json.title"
+  }
+}

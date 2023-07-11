@@ -14,7 +14,7 @@ use Psr\Cache\CacheException;
 use Psr\Cache\InvalidArgumentException;
 use Symfony\Component\HttpFoundation\Response;
 
-class SyncSDGService
+class SyncElasticService
 {
     private EntityManagerInterface $entityManager;
     private GatewayResourceService $resourceService;
@@ -48,7 +48,7 @@ class SyncSDGService
      *
      * @return array
      */
-    public function syncSDGHandler(array $data, array $configuration): array
+    public function syncElasticHandler(array $data, array $configuration): array
     {
         $this->data = $data;
         $this->configuration = $configuration;
@@ -71,7 +71,7 @@ class SyncSDGService
 
             $elasticData['object'] = str_replace('&quot;', '"', $elasticData['object']);
 
-            $this->callService->call($elasticSource, '/api/as/v1/engines/kiss-engine/documents', 'POST', ['body' => \Safe\json_encode($elasticData)]);
+            $response = $this->callService->call($elasticSource, '/api/as/v1/engines/kiss-engine/documents', 'POST', ['body' => \Safe\json_encode($elasticData)]);
 
             if ($response->getStatusCode() !== 200 && $response->getStatusCode() !== 201) {
                 $this->data['response'] = new Response('Could not synchronise to elasticSearch, '. $response->getBody()->getContents(), 422);

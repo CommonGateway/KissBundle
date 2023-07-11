@@ -1,8 +1,8 @@
 {
-  "$id": "https://kissdevelopment.commonground.nu/action/buren.SyncSDGAction.action.json",
+  "$id": "https://kissdevelopment.commonground.nu/action/buren.SyncBuddyPressAction.action.json",
   "$schema": "https://docs.commongateway.nl/schemas/Action.schema.json",
-  "version": "0.0.2",
-  "title": "SyncSDGAction",
+  "version": "0.0.1",
+  "title": "SyncBuddyPressAction",
   "description": "Syncs the SDG+ to elasticSearch",
   "listens": [
     "kiss.default.listens"
@@ -13,8 +13,8 @@
   "priority": 0,
   "async": false,
   "configuration": {
-    "burenSource": "https://buren.nl/source/buren.sdgplus.source.json",
+    "burenSource": "https://buren.nl/source/buren.buddypress.source.json",
     "elasticSource": "https://kissdevelopment.commonground.nu/source/kiss.enterpriseSearchPrivate.source.json",
-    "sdgMapping": "https://buren.nl/mapping/buren.sdgProduct.mapping.json"
+    "sdgMapping": "https://buren.nl/mapping/buren.buddyPressElastic.mapping.json"
   }
 }

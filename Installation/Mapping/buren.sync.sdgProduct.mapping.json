@@ -11,8 +11,5 @@
     "self": "",
     "id": "kennisartikel_{{ object.uuid }}",
     "object_bron": "Kennisartikel"
-  },
-  "cast": {
-    "object": "jsonToArray"
   }
 }
