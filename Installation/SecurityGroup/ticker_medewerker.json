@@ -1,0 +1,28 @@
+{
+    "$id": "https://kissdevelopment.commonground.nu/securityGroup/kiss.tickermedewerker.securityGroup.json",
+    "$schema": "https://docs.commongateway.nl/schemas/SecurityGroup.json",
+    "version": "0.1",
+    "title": "Ticker Medewerker",
+    "anonymous": false,
+    "scopes": [
+        "sources.https://kissdevelopment.commonground.nu/source/kiss.enterpriseSearchSearch.source.json.GET",
+        "sources.https://buren.nl/source/buren.pub.source.json.GET",
+        "schemas.https://kissdevelopment.commonground.nu/kiss.pubPublicatie.schema.json.GET",
+        "schemas.https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json.GET",
+        "schemas.https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json.GET",
+        "sources.https://buren.nl/source/buren.kvk.source.json.GET",
+        "schemas.https://opencatalogi.nl/kvk.vestigings.schema.json.GET",
+        "sources.https://buren.nl/source/buren.brp.source.json.GET",
+        "schemas.https://vng.brp.nl/schemas/brp.ingeschrevenPersoon.schema.json.GET",
+        "sources.https://buren.nl/source/buren.zrc.source.json.GET",
+        "schemas.https://vng.opencatalogi.nl/schemas/zrc.zaak.schema.json.GET",
+        "schemas.https://klantenBundle.commonground.nu/klant.objectContactmoment.schema.json.GET",
+        "schemas.https://klantenBundle.commonground.nu/klant.objectContactmoment.schema.json.POST",
+        "schemas.https://klantenBundle.commonground.nu/klant.contactmoment.schema.json.GET",
+        "schemas.https://klantenBundle.commonground.nu/klant.contactmoment.schema.json.POST",
+        "schemas.https://klantenBundle.commonground.nu/klant.klantContactmoment.schema.json.GET",
+        "schemas.https://klantenBundle.commonground.nu/klant.klantContactmoment.schema.json.POST",
+        "schemas.https://kissdevelopment.commonground.nu/kiss.resultaatypeomschrijvinggeneriek.schema.json.GET",
+        "schemas.https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json.GET"
+    ]
+  }
