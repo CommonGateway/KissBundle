@@ -1,5 +1,5 @@
 {
-    "$id": "https://kissdevelopment.commonground.nu/securityGroup/kiss.tickermedewerker.securityGroup.json",
+    "$id": "https://buren.nl/securityGroup/kiss.tickermedewerker.securityGroup.json",
     "$schema": "https://docs.commongateway.nl/schemas/SecurityGroup.json",
     "version": "0.1",
     "title": "Ticker Medewerker",
