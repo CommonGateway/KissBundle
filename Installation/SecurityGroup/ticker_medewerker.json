@@ -1,7 +1,7 @@
 {
     "$id": "https://buren.nl/securityGroup/kiss.tickermedewerker.securityGroup.json",
     "$schema": "https://docs.commongateway.nl/schemas/SecurityGroup.json",
-    "version": "0.1",
+    "version": "0.2",
     "title": "Ticker Medewerker",
     "anonymous": false,
     "scopes": [
@@ -23,6 +23,10 @@
         "schemas.https://klantenBundle.commonground.nu/klant.klantContactmoment.schema.json.GET",
         "schemas.https://klantenBundle.commonground.nu/klant.klantContactmoment.schema.json.POST",
         "schemas.https://kissdevelopment.commonground.nu/kiss.resultaatypeomschrijvinggeneriek.schema.json.GET",
-        "schemas.https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json.GET"
+        "schemas.https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json.GET",
+        "sources.https://kissdevelopment.commonground.nu/source/kiss.enterpriseSearchPrivate.source.json.GET",
+        "sources.https://kissdevelopment.commonground.nu/source/kiss.enterpriseSearchPrivate.source.json.POST",
+        "sources.https://kissdevelopment.commonground.nu/source/kiss.enterpriseSearchSearch.source.json.POST",
+        "sources.https://kissdevelopment.commonground.nu/source/kiss.OpenPub.source.json.GET"
     ]
   }
