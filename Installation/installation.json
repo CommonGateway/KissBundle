@@ -38,12 +38,6 @@
         "reference": "https://kissdevelopment.commonground.nu/source/kiss.enterpriseSearchSearch.source.json",
         "path": "elastic",
         "methods": ["POST"]
-      },
-      {
-        "name": "OpenPub WP proxy endpoint",
-        "reference": "https://kissdevelopment.commonground.nu/source/kiss.OpenPub.source.json",
-        "path": "openpub",
-        "methods": ["GET"]
       }
     ],
     "schemas": [
