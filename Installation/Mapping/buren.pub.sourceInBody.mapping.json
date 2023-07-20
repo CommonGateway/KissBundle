@@ -14,7 +14,7 @@
     "pages": 0
   },
   "cast": {
-    "results": "jsonToArray",
+    "results": ["htmlDecode", "jsonToArray"],
     "count": "countValue:results",
     "limit": "int",
     "total": "int",

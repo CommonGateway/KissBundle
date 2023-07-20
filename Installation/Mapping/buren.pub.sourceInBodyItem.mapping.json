@@ -31,12 +31,9 @@
     "embedded.title.rendered": "title.rendered"
   },
   "cast": {
-    "content.rendered": "htmlDecode",
-    "excerpt.rendered": "htmlDecode",
     "_self.level": "int",
     "embedded.acf._self.level": "int",
     "embedded.acf.publicationFeatured": "bool",
-    "embedded.acf.publicationContent": "htmlDecode",
     "embedded.guid._self.level": "int",
     "embedded.title._self.level": "int"
   }
