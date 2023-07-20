@@ -5,17 +5,17 @@
   "version": "0.0.1",
   "passTrough": false,
   "mapping": {
-    "results": "{{ map(\"https://buren.nl/mapping/buren.pub.sourceInBodyItem.mapping.json\", _context, true)|json_encode }}",
-    "count": "{{_context|length}}",
-    "limit": "{{_context|length}}",
-    "total": "{{_context|length}}",
+    "results": "[{% for key, object in _context %}{% if key matches '/^\\\\d+$/' %}{% if not loop.first %},{% endif %}{{ map('https://buren.nl/mapping/buren.pub.sourceInBodyItem.mapping.json', object)|json_encode }}{% endif %}{% endfor %}]",
+    "count": 0,
+    "limit": 10,
+    "total": 0,
     "offset": 0,
     "page": 1,
-    "pages": 1
+    "pages": 0
   },
   "cast": {
     "results": "jsonToArray",
-    "count": "int",
+    "count": "countValue:results",
     "limit": "int",
     "total": "int",
     "offset": "int",
