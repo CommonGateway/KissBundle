@@ -7,7 +7,7 @@
   "mapping": {
     "limit": "_limit",
     "orderby": "modified",
-    "order": "_order.modified",
+    "order": "{% if _order.modified is defined %}{{ _order.modified }}{% else %}desc{% endif %}",
     "openpub-type": "embedded&#46;acf&#46;publicationType.int_compare"
   },
   "unset": [
@@ -15,5 +15,9 @@
     "_order",
     "embedded&#46;acf&#46;publicationType",
     "embedded&#46;acf&#46;publicationEndDate"
-  ]
+  ],
+  "cast": {
+    "limit": "unsetIfValue==_limit",
+    "openpub-type": "unsetIfValue==embedded&#46;acf&#46;publicationType.int_compare"
+  }
 }
