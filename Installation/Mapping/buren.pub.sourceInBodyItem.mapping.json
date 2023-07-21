@@ -9,7 +9,7 @@
     "_self.id": "id",
     "_self.name": "id",
     "_self.self": "{{ '/api/kiss_openpub_pub/' ~ id }}",
-    "_self.schema.description": "This is a proxy endpoint without schemas",
+    "_self.schema.ref": "https://kissdevelopment.commonground.nu/kiss.pubPublicatie.schema.json",
     "_self.level": 1,
     "_self.dateCreated": "date_gmt",
     "_self.dateModified": "modified",
