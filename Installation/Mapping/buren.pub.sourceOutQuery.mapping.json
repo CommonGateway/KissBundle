@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "passTrough": true,
   "mapping": {
-    "limit": "_limit",
+    "per_page": "_limit",
     "orderby": "modified",
     "order": "{% if _order.modified is defined %}{{ _order.modified }}{% else %}desc{% endif %}",
     "openpub-type": "embedded&#46;acf&#46;publicationType.int_compare"

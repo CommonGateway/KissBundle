@@ -38,6 +38,12 @@
         "reference": "https://kissdevelopment.commonground.nu/source/kiss.enterpriseSearchSearch.source.json",
         "path": "elastic",
         "methods": ["POST"]
+      },
+      {
+        "name": "Buren OpenPub API proxy endpoint",
+        "reference": "https://buren.nl/source/buren.pub.source.json",
+        "path": "kiss_openpub_proxy",
+        "methods": ["GET"]
       }
     ],
     "schemas": [
