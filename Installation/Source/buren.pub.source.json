@@ -2,7 +2,7 @@
     "title": "Buren OpenPub API",
     "$id": "https://buren.nl/source/buren.pub.source.json",
     "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
-    "version": "0.0.3",
+    "version": "0.0.2",
     "description": "Buren OpenPub API",
     "location": "https://openpub.buren.nl/wp-json/wp/v2/openpub-item",
     "isEnabled" : false,
