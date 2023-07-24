@@ -6,20 +6,10 @@
   "passTrough": false,
   "mapping": {
     "results": "[{% for key, object in _context %}{% if key matches '/^\\\\d+$/' %}{% if not loop.first %},{% endif %}{{ map('https://buren.nl/mapping/buren.pub.sourceInBodyItem.mapping.json', object)|json_encode }}{% endif %}{% endfor %}]",
-    "count": 0,
-    "limit": 10,
-    "total": 0,
-    "offset": 0,
-    "page": 1,
-    "pages": 0
+    "count": 0
   },
   "cast": {
     "results": ["htmlDecode", "jsonToArray"],
-    "count": "countValue:results",
-    "limit": "int",
-    "total": "int",
-    "offset": "int",
-    "page": "int",
-    "pages": "int"
+    "count": "countValue:results"
   }
 }
