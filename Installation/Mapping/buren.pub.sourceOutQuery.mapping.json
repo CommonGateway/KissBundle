@@ -17,7 +17,7 @@
     "embedded&#46;acf&#46;publicationEndDate"
   ],
   "cast": {
-    "limit": "unsetIfValue==_limit",
+    "per_page": "unsetIfValue==_limit",
     "openpub-type": "unsetIfValue==embedded&#46;acf&#46;publicationType.int_compare"
   }
 }
