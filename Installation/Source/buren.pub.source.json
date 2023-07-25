@@ -2,7 +2,22 @@
     "title": "Buren OpenPub API",
     "$id": "https://buren.nl/source/buren.pub.source.json",
     "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
-    "version": "0.0.1",
-    "location": "https://gemeenteburen-openpub.accept02.yard.nl/wp-json/owc/openpub/v1/items",
-    "isEnabled" : false
+    "version": "0.0.2",
+    "description": "Buren OpenPub API",
+    "location": "https://openpub.buren.nl/wp-json/wp/v2/openpub-item",
+    "isEnabled" : false,
+    "endpointsConfig": {
+        "global": {
+            "out": {
+                "query": {
+                    "mapping": "https://buren.nl/mapping/buren.pub.sourceOutQuery.mapping.json"
+                }
+            },
+            "in": {
+                "body": {
+                    "mapping": "https://buren.nl/mapping/buren.pub.sourceInBody.mapping.json"
+                }
+            }
+        }
+    }
 }

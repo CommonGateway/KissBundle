@@ -40,9 +40,9 @@
         "methods": ["POST"]
       },
       {
-        "name": "OpenPub WP proxy endpoint",
-        "reference": "https://kissdevelopment.commonground.nu/source/kiss.OpenPub.source.json",
-        "path": "openpub",
+        "name": "Buren OpenPub API proxy endpoint",
+        "reference": "https://buren.nl/source/buren.pub.source.json",
+        "path": "kiss_openpub_proxy",
         "methods": ["GET"]
       }
     ],

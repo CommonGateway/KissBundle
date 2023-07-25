@@ -1,9 +1,10 @@
 {
     "$id": "https://kissdevelopment.commonground.nu/kiss.pubPublicatie.schema.json",
     "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
-    "version": "0.2",
+    "version": "0.3",
     "title": "KissPubPublicatie",
     "type": "object",
+    "createAuditTrails": true,
     "properties": {
         "date": {
           "type": "string",

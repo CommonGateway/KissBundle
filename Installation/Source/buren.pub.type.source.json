@@ -1,9 +1,18 @@
 {
-    "title": "Wordpress V2 Openpub Typ",
+    "title": "Buren OpenPub API Type",
     "$id": "https://buren.nl/source/buren.pub.type.source.json",
     "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
-    "version": "0.0.1",
-    "description": "Wordpress v2 api for taxonomies",
+    "version": "0.0.2",
+    "description": "Buren OpenPub API Type",
     "location": "https://openpub.buren.nl/wp-json/wp/v2/openpub-type",
-    "isEnabled" : false
+    "isEnabled" : false,
+    "endpointsConfig": {
+        "global": {
+            "in": {
+                "body": {
+                    "mapping": "https://buren.nl/mapping/buren.pub.typeSourceInBody.mapping.json"
+                }
+            }
+        }
+    }
 }
