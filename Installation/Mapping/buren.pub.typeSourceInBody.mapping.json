@@ -8,6 +8,6 @@
     "#": "[{% for key, object in _context %}{% if key matches '/^\\\\d+$/' %}{% if not loop.first %},{% endif %}{{ map('https://buren.nl/mapping/buren.pub.typeSourceInBodyItem.mapping.json', object)|json_encode }}{% endif %}{% endfor %}]"
   },
   "cast": {
-    "#": "jsonToArray"
+    "#": ["htmlDecode", "jsonToArray"]
   }
 }
