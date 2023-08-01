@@ -4,13 +4,31 @@ namespace Kiss\KissBundle\Service;
 
 use App\Entity\CollectionEntity;
 use CommonGateway\CoreBundle\Installer\InstallerInterface;
+use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Doctrine\ORM\EntityManagerInterface;
 
 class InstallationService implements InstallerInterface
 {
     private EntityManagerInterface $entityManager;
-
+    
+    /**
+     * @var SymfonyStyle
+     */
+    private SymfonyStyle $io;
+    
+    /**
+     * @param SymfonyStyle $style
+     * @return $this
+     */
+    public function setStyle(SymfonyStyle $style): self
+    {
+        $this->io = $style;
+        
+        return $this;
+        
+    }//end setStyle()
+    
     public function __construct(EntityManagerInterface $entityManager)
     {
         $this->entityManager = $entityManager;
