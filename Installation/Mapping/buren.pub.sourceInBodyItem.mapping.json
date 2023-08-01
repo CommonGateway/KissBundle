@@ -2,7 +2,7 @@
   "title": "pub.sourceInBodyItem",
   "$id": "https://buren.nl/mapping/buren.pub.sourceInBodyItem.mapping.json",
   "$schema": "https://docs.commongateway.nl/schemas/Mapping.schema.json",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "passTrough": true,
   "mapping": {
     "_id": "id",
@@ -19,7 +19,7 @@
     "embedded.acf._self.level": 2,
     "embedded.acf.publicationType": "openpub-type.0",
     "embedded.acf.publicationSkill": "openpub-audience",
-    "embedded.acf.publicationEndDate": "{{ modified|date_modify(\"+4 year\")|date(\"c\") }}",
+    "embedded.acf.publicationEndDate": "{{ modified|date_modify(\"+100 year\")|date(\"c\") }}",
     "embedded.acf.publicationFeatured": "false",
     "embedded.acf.publicationTitle": "title.rendered",
     "embedded.acf.publicationContent": "content.rendered",
