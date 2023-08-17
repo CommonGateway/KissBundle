@@ -1,6 +1,6 @@
 {
     "title": "NotificationAction",
-    "$id": "https://kissdevelopment.commonground.nu/action/kiss.HandelsRegisterSearchAction.action.json",
+    "$id": "https://kissdevelopment.commonground.nu/action/kiss.NotificationAction.action.json",
     "$schema": "https://docs.commongateway.nl/schemas/Action.schema.json",
     "version": "0.0.1",
     "listens": ["kiss.notification"],
