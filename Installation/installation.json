@@ -50,14 +50,14 @@
       {
         "$id": "https://buren.nl/EntitiesEndpoint/buren.search.endpoint.json",
         "version": "0.0.1",
-        "name": "Search",
-        "description": "Search Endpoint for Medewerkers & Kennisartikelen",
+        "name": "DIT Search Endpoint",
+        "description": "DIT Search Endpoint for Medewerkers & Kennisartikelen",
         "schemas": [
           "https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json",
           "https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json"
         ],
-        "path": ["search"],
-        "pathRegex": "^(search)$",
+        "path": ["dit_search"],
+        "pathRegex": "^(dit_search)$",
         "methods": ["GET"]
       }
     ],
