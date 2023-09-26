@@ -46,6 +46,21 @@
         "methods": ["GET"]
       }
     ],
+    "multipleSchemas": [
+      {
+        "$id": "https://buren.nl/EntitiesEndpoint/buren.search.endpoint.json",
+        "version": "0.0.1",
+        "name": "Search",
+        "description": "Search Endpoint for Medewerkers & Kennisartikelen",
+        "schemas": [
+          "https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json",
+          "https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json"
+        ],
+        "path": ["search"],
+        "pathRegex": "^(search)$",
+        "methods": ["GET"]
+      }
+    ],
     "schemas": [
       {
         "reference": "https://kissdevelopment.commonground.nu/notification.schema.json",
