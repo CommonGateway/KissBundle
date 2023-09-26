@@ -46,6 +46,21 @@
         "methods": ["GET"]
       }
     ],
+    "multipleSchemas": [
+      {
+        "$id": "https://buren.nl/EntitiesEndpoint/buren.search.endpoint.json",
+        "version": "0.0.1",
+        "name": "DIT Search Endpoint",
+        "description": "DIT Search Endpoint for Medewerkers & Kennisartikelen",
+        "schemas": [
+          "https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json",
+          "https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json"
+        ],
+        "path": ["dit_search"],
+        "pathRegex": "^(dit_search)$",
+        "methods": ["GET"]
+      }
+    ],
     "schemas": [
       {
         "reference": "https://kissdevelopment.commonground.nu/notification.schema.json",
