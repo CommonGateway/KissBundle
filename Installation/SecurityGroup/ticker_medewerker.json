@@ -1,7 +1,7 @@
 {
     "$id": "https://buren.nl/securityGroup/kiss.tickermedewerker.securityGroup.json",
-    "$schema": "https://docs.commongateway.nl/schemas/SecurityGroup.json",
-    "version": "0.2",
+    "$schema": "https://docs.commongateway.nl/schemas/SecurityGroup.schema.json",
+    "version": "0.2.1",
     "title": "Ticker Medewerker",
     "anonymous": false,
     "scopes": [
