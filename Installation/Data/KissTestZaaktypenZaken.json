@@ -199,7 +199,7 @@
     ],
     "https://vng.opencatalogi.nl/schemas/zrc.zaak.schema.json": [
         {
-            "_id": "3bb9bccc-0619-4c66-905e-fc5f606b16b0",
+            "description": "<- should be _id:\"3bb9bccc-0619-4c66-905e-fc5f606b16b0\" but this breaks stuff",
             "identificatie": "ZAAK-1",
             "bronorganisatie": "807287684",
             "omschrijving": "Melding openbare ruimte",
