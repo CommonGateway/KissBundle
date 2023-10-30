@@ -1,15 +1,17 @@
 {
     "https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json": [
         {
+			"id": "8700e9cd-9b9f-4071-89f0-ab703adbcb50",
             "name": "Nieuws"
         },
         {
+			"id": "048547fa-a324-42c7-8cd2-f1033d4a1d0a",
             "name": "Werkinstructie"
         }
     ],
 	"https://klantenBundle.commonground.nu/klant.klant.schema.json": [
 		{
-			"_id": "85acb6b2-1b7c-4441-aaa9-6e0e0122d301",
+			"id": "85acb6b2-1b7c-4441-aaa9-6e0e0122d301",
 			"bronorganisatie": "000000000",
 			"klantnummer": "00000000",
 			"bedrijfsnaam": null,
@@ -25,61 +27,78 @@
 	],
     "https://kissdevelopment.commonground.nu/kiss.resultaatypeomschrijvinggeneriek.schema.json": [
         {
+			"id": "c6432686-ed74-4442-8c4d-87f8532f181b",
 			"omschrijving": "Contactverzoek",
             "definitie": "Contactverzoek gemaakt"
         },
         {
+			"id": "260c6f85-6a2d-4935-aa42-48c76fd54bc2",
 			"omschrijving": "zelfstandig",
             "definitie": "Zelfstandig afgehandeld"
         },
         {
+			"id": "6d09c7ff-c8f6-44ee-8c70-75efe7bd76dd",
 			"omschrijving": "isAfgehandeld",
             "definitie": "Afgehandeld, klant belt nog terug"
         },
         {
+			"id": "ac4ed64a-413f-4429-9ac9-216d2b9a89a8",
 			"omschrijving": "Afdeling",
             "definitie": "Doorverbonden met de afdeling"
         },
         {
+			"id": "2de8eb6d-5c60-4fd4-9dba-f027dd154cff",
 			"omschrijving": "Collega",
             "definitie": "Doorverbonden met de juiste collega"
         }
     ],
     "https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json": [
 		{
+			"id": "fa28617a-d7c3-44d3-8b10-85ce026affda",
 			"name": "Afval"
 		},
 		{
+			"id": "0a38bc3d-a890-41a6-8c25-e7882ed2869a",
 			"name": "Bestrating en meubilair"
 		},
 		{
+			"id": "c46e9539-babd-4626-91b9-fb591d74443a",
 			"name": "Burgerzaken"
 		},
 		{
+			"id": "d7b527df-ccc5-4065-a783-46dd063d5131",
 			"name": "Evenementen"
 		},
 		{
+			"id": "7d0f374d-f06a-44a5-a8f3-9869f1c9726c",
 			"name": "Groenbeheer"
 		},
 		{
+			"id": "bf1bea71-580c-400e-a6c6-07a1a5f17fd8",
 			"name": "Horeca"
 		},
 		{
+			"id": "10f889c4-742b-4e28-8c7e-9574793cdd91",
 			"name": "Juridische zaken"
 		},
 		{
+			"id": "905a59d3-3d2e-4633-b7d4-c10f0ddb05ee",
 			"name": "Omgevingswet"
 		},
 		{
+			"id": "9f9537e2-220f-4ecf-a7e2-a092b9bbf941",
 			"name": "Overlast"
 		},
 		{
+			"id": "98585777-12ac-4ae3-9a31-4792af69cc62",
 			"name": "Parkeren"
 		},
 		{
+			"id": "1005cb5d-47e9-42c3-b5e5-ca2a59aad843",
 			"name": "Vergunningen"
 		},
 		{
+			"id": "9e0b11f9-62e8-42b3-bd6a-c073e07ac5c3",
 			"name": "Werk en inkomen"
 		}
 	]

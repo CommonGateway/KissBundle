@@ -1,6 +1,7 @@
 {
     "https://vng.opencatalogi.nl/schemas/ztc.catalogus.schema.json": [
         {
+            "id": "40e32934-e670-48eb-9a75-570d76ed458f",
             "domein": "kiss.gembur.nl",
             "rsin": "807287684",
             "_id": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
@@ -71,6 +72,7 @@
                 "https://www.deventer.nl/meldpunt-openbare-ruimte/maak-direct-online-een-melding"
             ],
             "referentieproces": {
+                "id": "5dfd5496-f55a-446e-a530-27d699947715",
                 "naam": "string",
                 "link": "http://example.com"
             },
@@ -79,22 +81,25 @@
                 "b76d0354-5a77-41ba-b84f-b1eeda3b9f78",
                 "80c74793-a752-4e00-a996-925fb99eed21"
             ],
-            "besluittypen": [{
-                "catalogus": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
-                "zaaktypes": [
-                    "5b880f19-3bfa-4a74-ae98-fc486642e731"
-                ],
-                "publicatieIndicatie": true,
-                "informatieobjecttypen": [
-                    {
-                        "catalogus": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
-                        "omschrijving": "Melding openbare ruimte",
-                        "vertrouwelijkheidaanduiding": "openbaar",
-                        "beginGeldigheid": "2019-08-24"
-                    }
-                ],
-                "beginGeldigheid": "2019-08-24"
-            }],
+            "besluittypen": [
+                {
+                    "id": "04c92eb3-f68d-4d4b-8a0f-a3bcd752d0e0",
+                    "catalogus": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
+                    "zaaktypes": [
+                        "5b880f19-3bfa-4a74-ae98-fc486642e731"
+                    ],
+                    "publicatieIndicatie": true,
+                    "informatieobjecttypen": [
+                        {
+                            "catalogus": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
+                            "omschrijving": "Melding openbare ruimte",
+                            "vertrouwelijkheidaanduiding": "openbaar",
+                            "beginGeldigheid": "2019-08-24"
+                        }
+                    ],
+                    "beginGeldigheid": "2019-08-24"
+                }
+            ],
             "beginGeldigheid": "2019-08-24",
             "versiedatum": "2019-08-24",
             "concept": true
@@ -119,6 +124,7 @@
                 "https://www.deventer.nl/bijstandzelfstandigen"
             ],
             "referentieproces": {
+                "id": "d91b20bf-357a-4a9e-8afa-39de1eace4ed",
                 "naam": "string",
                 "link": "http://example.com"
             },
@@ -151,6 +157,7 @@
                 "https://www.deventer.nl/dzd"
             ],
             "referentieproces": {
+                "id": "019ff154-5fab-431f-b02e-8a09a6511640",
                 "naam": "string",
                 "link": "http://example.com"
             },
@@ -184,6 +191,7 @@
                 "https://www.deventer.nl/bouwvergunning"
             ],
             "referentieproces": {
+                "id": "59cafa62-4197-4204-890f-3febe147ad70",
                 "naam": "string",
                 "link": "http://example.com"
             },
@@ -199,7 +207,7 @@
     ],
     "https://vng.opencatalogi.nl/schemas/zrc.zaak.schema.json": [
         {
-            "_id": "3bb9bccc-0619-4c66-905e-fc5f606b16b0",
+            "id_description": "<- should be id:\"3bb9bccc-0619-4c66-905e-fc5f606b16b0\" but this breaks stuff",
             "identificatie": "ZAAK-1",
             "bronorganisatie": "807287684",
             "omschrijving": "Melding openbare ruimte",
@@ -216,11 +224,13 @@
             "archiefactiedatum": "2027-12-16",
             "startdatumBewaartermijn": "2027-12-16",
             "status": {
+                "id": "b65fcb9b-1829-4aa5-9adf-4740562fb241",
                 "datumStatusGezet": "2022-12-16T16:22:26.620Z",
                 "statustoelichting": "In behandeling"
             },
             "rollen": [
                 {
+                    "id": "5074666c-3a47-4eb4-91ab-21b3167fc87d",
                     "roltype": "b76d0354-5a77-41ba-b84f-b1eeda3b9f78",
                     "indicatieMachtiging": "machtiginggever",
                     "roltoelichting": "Indiener van de melding",
@@ -228,18 +238,21 @@
                     "omschrijving": "initiator",
                     "betrokkeneType": "natuurlijk_persoon",
                     "betrokkeneIdentificatie": {
+                        "id": "efead607-9dd4-4076-b4fb-e73f80abc442",
                         "inpBsn": "999993653",
                         "geslachtsnaam": "Moulin",
                         "voornamen": "Suzanne"
                     }
                 },
                 {
+                    "id": "07614f3f-2929-451d-800c-ad1a0caae0e3",
                     "roltype": "80c74793-a752-4e00-a996-925fb99eed21",
                     "roltoelichting": "Behandelaar van de melding",
                     "omschrijvingGeneriek": "Behandelaar",
                     "omschrijving": "Behandelaar",
                     "betrokkeneType": "medewerker",
                     "betrokkeneIdentificatie": {
+                        "id": "b04307d3-35d4-4306-b32a-f54796c101a5",
                         "voorletters": "J.H.",
                         "voorvoegselGeslachtsnaam": "van",
                         "geslachtsnaam": "Bovenkarspel"
@@ -248,6 +261,7 @@
             ]
         },
         {
+            "id_description": "<- should be id:\"f4be319c-31b5-4f88-a17f-f1e409d3247e\" but this breaks stuff",
             "identificatie": "ZAAK-2",
             "bronorganisatie": "807287684",
             "omschrijving": "Aanvraag Bbz voor startende ondernemer",
@@ -264,29 +278,34 @@
             "archiefactiedatum": "2032-11-28",
             "startdatumBewaartermijn": "2032-11-28",
             "status": {
+                "id": "c3a68b8a-eb9a-4b4d-90cf-46749695807e",
                 "statustoelichting": "In behandeling - indieningsvereisten toetsen",
                 "datumStatusGezet": "2022-11-28T16:22:26+00:00"
             },
             "rollen": [
                 {
+                    "id": "17bf2ac5-66db-4045-9614-dbaabfbd4fb8",
                     "roltype": "8a857604-15e6-4698-ab9c-96e1b3ab5de6",
                     "roltoelichting": "Aanvrager van de zaak",
                     "omschrijvingGeneriek": "initiator",
                     "omschrijving": "initiator",
                     "betrokkeneType": "natuurlijk_persoon",
                     "betrokkeneIdentificatie": {
+                        "id": "e0fc3884-a8a2-4a27-96f8-db093c7f0f78",
                         "inpBsn": "999993653",
                         "geslachtsnaam": "Moulin",
                         "voornamen": "Suzanne"
                     }
                 },
                 {
+                    "id": "c00be4e1-4347-4f6d-b8b8-280a505d48b0",
                     "roltype": "06cf1c5d-1aa3-47ec-af44-2477d5642d26",
                     "roltoelichting": "Behandelaar van de melding",
                     "omschrijvingGeneriek": "Behandelaar",
                     "omschrijving": "Behandelaar",
                     "betrokkeneType": "medewerker",
                     "betrokkeneIdentificatie": {
+                        "id": "15cb9311-a4c0-4f4c-8552-77b05da286b7",
                         "voorletters": "J.H.",
                         "voorvoegselGeslachtsnaam": "van",
                         "geslachtsnaam": "Bovenkarspel"
@@ -295,11 +314,13 @@
             ],
             "zaakinformatieobjecten": [
                 {
+                    "id": "538f1b36-4eb7-4f62-9880-c4299dcb09aa",
                     "titel": "Contract 1",
                     "beschrijving": "Contract 1 beschrijving",
                     "registratiedatum": "2022-11-27T09:44:22.811Z",
                     "aardRelatieWeergave": "Hoort bij, omgekeerd: kent",
                     "informatieobject": {
+                        "id": "a6f2ad24-0493-4ddb-8fae-23f76d3029a9",
                         "bronorganisatie": "807287684",
                         "creatiedatum": "2022-11-27",
                         "titel": "Contract 1",
@@ -319,11 +340,13 @@
                     }
                 },
                 {
+                    "id": "8eab4688-0e73-414c-8562-214b20cc6f55",
                     "titel": "Contract 2",
                     "beschrijving": "Contract 2 beschrijving",
                     "registratiedatum": "2022-11-27T09:44:22.811Z",
                     "aardRelatieWeergave": "Hoort bij, omgekeerd: kent",
                     "informatieobject": {
+                        "id": "ecbfd14e-0ef3-41e2-95f3-2365758e3a2c",
                         "bronorganisatie": "807287684",
                         "creatiedatum": "2022-11-27",
                         "titel": "Contract 2",
@@ -343,11 +366,13 @@
                     }
                 },
                 {
+                    "id": "8d757e6e-1da1-4a74-b910-05333762764a",
                     "titel": "Contract 3",
                     "beschrijving": "Contract 3 beschrijving",
                     "registratiedatum": "2022-11-27T09:44:22.811Z",
                     "aardRelatieWeergave": "Hoort bij, omgekeerd: kent",
                     "informatieobject": {
+                        "id": "af724613-6d62-4b75-bf2a-4fb0e958109f",
                         "bronorganisatie": "807287684",
                         "creatiedatum": "2022-11-27",
                         "titel": "Contract 3",
@@ -369,6 +394,7 @@
             ]
         },
         {
+            "id_description": "<- should be id:\"48516575-32ba-4b24-ad4f-c847702a8dfb\" but this breaks stuff",
             "identificatie": "ZAAK-3",
             "bronorganisatie": "807287684",
             "omschrijving": "Aanvraag IOAZ voor onderneming die wil stoppen met bedrijf",
@@ -385,17 +411,20 @@
             "archiefactiedatum": "2027-11-21",
             "startdatumBewaartermijn": "2027-11-21",
             "status": {
+                "id": "1137d041-6b63-4dc2-a391-a4c613f67c2b",
                 "statustoelichting": "In behandeling",
                 "datumStatusGezet": "2022-11-21T16:22:26+00:00"
             },
             "rollen": [
                 {
+                    "id": "d6f4df49-f483-4f2a-b3c4-afdd2d515fd0",
                     "roltype": "a1531c29-e7ac-4b64-bc18-3c0dc675ab61",
                     "roltoelichting": "Aanvrager van de zaak",
                     "omschrijvingGeneriek": "initiator",
                     "omschrijving": "initiator",
                     "betrokkeneType": "vestiging",
                     "betrokkeneIdentificatie": {
+                        "id": "14f9ca4f-3933-4f85-969b-e0c0258773ce",
                         "handelsnaam": [
                             "Boekenwinkel leesplezier"
                         ],
@@ -403,12 +432,14 @@
                     }
                 },
                 {
+                    "id": "fb34a514-f4fe-475c-a833-469e5d81f948",
                     "roltype": "ffe65441-4c4f-407b-ada5-f7d8c2d6cc88",
                     "roltoelichting": "Behandelaar van de melding",
                     "omschrijvingGeneriek": "Behandelaar",
                     "omschrijving": "Behandelaar",
                     "betrokkeneType": "medewerker",
                     "betrokkeneIdentificatie": {
+                        "id": "8bfd0ae4-b021-4e2a-ac07-eb8bfd38585b",
                         "voorletters": "J.H.",
                         "voorvoegselGeslachtsnaam": "van",
                         "geslachtsnaam": "Bovenkarspel"
@@ -417,11 +448,13 @@
             ],
             "zaakinformatieobjecten": [
                 {
+                    "id": "adb409c4-425c-4b7c-92e8-5415bd38557b",
                     "titel": "Kopie kenteken 1",
                     "beschrijving": "eerste kenteken kopie",
                     "registratiedatum": "2022-11-21T09:44:22.811Z",
                     "aardRelatieWeergave": "Hoort bij, omgekeerd: kent",
                     "informatieobject": {
+                        "id": "d6b96749-48e1-4a95-8b4b-2dfb243597b3",
                         "bronorganisatie": "807287684",
                         "creatiedatum": "2022-11-27",
                         "titel": "Kopie kenteken 1",
@@ -441,11 +474,13 @@
                     }
                 },
                 {
+                    "id": "c4157542-a390-4c73-9464-64ceb1012431",
                     "titel": "Kopie kenteken 2",
                     "beschrijving": "tweede kenteken kopie",
                     "registratiedatum": "2022-11-21T09:44:22.811Z",
                     "aardRelatieWeergave": "Hoort bij, omgekeerd: kent",
                     "informatieobject": {
+                        "id": "57b67326-b8c0-46dc-ba03-901925b97b4c",
                         "bronorganisatie": "807287684",
                         "creatiedatum": "2022-11-27",
                         "titel": "Kopie kenteken 2",
@@ -465,11 +500,13 @@
                     }
                 },
                 {
+                    "id": "dfb8b4b6-d5a5-4a31-9b10-0d1ca9a29f37",
                     "titel": "Kopie kenteken 3",
                     "beschrijving": "derde kenteken kopie",
                     "registratiedatum": "2022-11-21T09:44:22.811Z",
                     "aardRelatieWeergave": "Hoort bij, omgekeerd: kent",
                     "informatieobject": {
+                        "id": "1171bb20-d6ce-4f6f-9e55-15ddfe4ab7bc",
                         "bronorganisatie": "807287684",
                         "creatiedatum": "2022-11-27",
                         "titel": "Kopie kenteken 3",
@@ -491,6 +528,7 @@
             ]
         },
         {
+            "id_description": "<- should be id:\"f1c63e7c-19c9-45b4-b540-d39a5e258ca5\" but this breaks stuff",
             "identificatie": "ZAAK-4",
             "bronorganisatie": "807287684",
             "omschrijving": "Aanvraag omgevingsvergunning voor bouwen Bibob-plichtig",
@@ -507,29 +545,34 @@
             "archiefactiedatum": "2032-11-14",
             "startdatumBewaartermijn": "2032-11-14",
             "status": {
+                "id": "16694fef-a72a-43d8-9719-019675939235",
                 "datumStatusGezet": "2022-11-14T16:22:26.620Z",
                 "statustoelichting": "In behandeling"
             },
             "rollen": [
                 {
+                    "id": "09b3feb9-b3bf-4dcf-aac9-97d253afa849",
                     "roltype": "ed245dee-3184-4371-8bf0-b337d2575cb1",
                     "roltoelichting": "Aanvrager van de zaak",
                     "omschrijvingGeneriek": "initiator",
                     "omschrijving": "initiator",
                     "betrokkeneType": "natuurlijk_persoon",
                     "betrokkeneIdentificatie": {
+                        "id": "ca60ca17-ff5c-4dda-9221-6e1358913009",
                         "geslachtsnaam": "Żywiałowska",
                         "inpBsn": "999990172",
                         "voornamen": "Róza Mstyslava"
                     }
                 },
                 {
+                    "id": "dd36444d-7cf7-4641-be80-7fb70001aed4",
                     "roltype": "85B52629-DAA7-4056-9F0C-3839ED8EDCBE",
                     "roltoelichting": "Behandelaar van de zaak",
                     "omschrijvingGeneriek": "Behandelaar",
                     "omschrijving": "Behandelaar",
                     "betrokkeneType": "medewerker",
                     "betrokkeneIdentificatie": {
+                        "id": "1e2fd4de-312f-4a36-9c95-1a3aef388659",
                         "voorletters": "J.H.",
                         "voorvoegselGeslachtsnaam": "van",
                         "geslachtsnaam": "Bovenkarspel"
