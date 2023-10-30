@@ -1,6 +1,7 @@
 {
     "https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json": [
         {
+            "id": "dcd8b288-1eac-4622-9bfb-660f3bc3b0f3",
             "upnLabel": "omgevingsvergunning bouw",
             "upnUri": "http://standaarden.overheid.nl/owms/terms/omgevingsvergunning_bouw",
             "versie": 0,
@@ -10,6 +11,7 @@
             "doelgroep": "eu-burger, eu-bedrijf",
             "vertalingen": [
                 {
+                    "id": "64476e0a-ec47-4b00-866d-29cf7934d308",
                     "taal": "nl",
                     "productTitelDecentraal": "Monument verbouwen of slopen",
                     "specifiekeTekst": "<p>Bezit (of koopt) u een beschermd monument?&nbsp;Dan zijn er regels als u het zou willen verbouwen, herstellen of aanpassen. Het doel van de monumentenstatus is de waarden te behouden. Daarom heeft u een&nbsp;omgevingsvergunning nodig als u een monument wilt wijzigen of (gedeeltelijk) slopen. Het plegen van onderhoud is vaak vergunningvrij.</p>\n <p>U heeft ook een vergunning nodig als u een gebouw binnen een beschermd stads- of dorpsgezicht wilt slopen. Of als in het bestemmingsplan staat dat u een omgevingsvergunning moet aanvragen.</p>\n <p>Wilt u mobiel gaan breken (sloopafval ter plaatse bewerken), stel dan de gemeente van tevoren op de hoogte van de werkzaamheden.</p>",
@@ -21,36 +23,47 @@
                     "notice": "<h2>Monument: buiten- en binnenkant</h2>\n<p>Bij een monument gaat het niet alleen om de gevel of de buitenkant van het gebouw. Het gehele gebouw is aangewezen als monument, inclusief de binnenkant.</p>\n<h2>Er zijn 4 verschillende soorten monumenten:</h2>\n<ul>\n<li>Rijksmonument</li>\n<li>Gemeentelijk monument</li>\n<li>Rijksbeschermd stads- of dorpsgezicht</li>\n<li>Gemeentelijk beschermd stadsgezicht</li>\n</ul>\n<p>Een gemeentelijk monument of een Rijksmonument is een onroerend goed dat van (lokaal of algemeen) belang is door zijn schoonheid of betekenis voor de wetenschap of door zijn cultuurhistorische waarde. U hebt een vergunning nodig als u een monument wil slopen, veranderen of herstellen. Ook het gebruiken of laten gebruiken, waardoor het monument wordt ontsierd of in gevaar wordt gebracht mag niet zonder vergunning. Reguliere onderhoudswerkzaamheden zijn vergunningvrij.</p>\n<p>Bij beschermde stads- of dorpsgezichten gaat het om groepen van onroerende zaken, waarin zich &eacute;&eacute;n of meer monumenten bevinden. Hierbij hoeft het niet alleen te gaan over mooie panden. Ook bruggen kunnen hier bijvoorbeeld deel van uitmaken. Heeft uw plan gevolgen voor het aanzicht van een beschermd stads- of dorpsgezicht? Dan heeft u een omgevingsvergunning nodig.</p>\n<h2>Meer informatie</h2>\n<ul>\n<li>Meer informatie over<a href=\"https://www.raadvanstate.nl/\" title=\"Naar de website van de Raad van State\">&nbsp;in hoger beroep gaan bij de Raad van State</a>.</li>\n<li><a href=\"http://www.synbiosys.alterra.nl/natura2000/routeplanner.aspx?subj=routeplanner\" title=\"Naar de routeplanner beschermde natuur\">Routeplanner beschermde natuur binnen de omgevingsvergunning</a></li>\n</ul>",
                     "synonyms": [
                         {
+                            "id": "2badfe1d-4c4a-4583-88c6-5be10f6b609a",
                             "synonym": "provinciale en gemeentelijke monumenten"
                         },
                         {
+                            "id": "9d3bc957-96b3-4fda-987d-35c9683c6d2f",
                             "synonym": "panden"
                         },
                         {
+                            "id": "9a451273-a41f-4949-b101-adda178ffaa8",
                             "synonym": "gebouwen"
                         },
                         {
+                            "id": "1b9b8da1-0210-4785-b1fa-b7879b7ac127",
                             "synonym": "verwijderen asbest"
                         },
                         {
+                            "id": "9f6d85d0-640a-4ac9-94a5-ed3b4d32743f",
                             "synonym": "sloopvergunning"
                         },
                         {
+                            "id": "f9b96582-b990-4ed3-8c48-ba085514cd9d",
                             "synonym": "toestemming tot het slopen van bouwwerk of woning"
                         },
                         {
+                            "id": "9560cc3d-0574-4d99-9b6c-8881891a782a",
                             "synonym": "monumentenvergunning"
                         },
                         {
+                            "id": "4974681e-6916-4130-b050-227e9ef8eb36",
                             "synonym": "vastgoed"
                         },
                         {
+                            "id": "ac44f006-8d9e-454a-bcad-22ce438f4ff4",
                             "synonym": "beschermd stadsgezicht"
                         },
                         {
+                            "id": "3c644a04-dc5b-45cd-bb1c-1a749db00786",
                             "synonym": "beschermd dorpsgezicht"
                         },
                         {
+                            "id": "ad3d2f55-d4ec-46d1-8ee6-2ef65ddbb249",
                             "synonym": "sloopomgevingsvergunning"
                         }
                     ],
@@ -60,15 +73,18 @@
                 }
             ],
             "verantwoordelijkeOrganisatie": {
+                "id": "864d0889-7b9f-4b40-a5db-12255eca0e57",
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
             },
             "bevoegdeOrganisatie": {
+                "id": "cc0edd80-2af4-4f1c-b588-4f47926b4116",
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
             }
         },
         {
+            "id": "2167e63b-bf2d-4e6f-8e05-8b25c366d725",
             "upnLabel": "individuele inkomenstoeslag",
             "upnUri": "http://standaarden.overheid.nl/owms/terms/indInkToesl",
             "versie": 0,
@@ -78,6 +94,7 @@
             "doelgroep": "eu-burger",
             "vertalingen": [
                 {
+                    "id": "60154e46-4e57-4820-89a1-aa5bfd485c7b",
                     "taal": "nl",
                     "productTitelDecentraal": "Individuele inkomenstoeslag aanvragen",
                     "specifiekeTekst": "<p>Heeft u een minimuminkomen en geen uitzicht op werk? Bent u tussen de 21 en pensioengerechtigde leeftijd? Dan kunt u in aanmerking komen voor een individuele inkomenstoeslag. Met de individuele inkomenstoeslag kunt u bijvoorbeeld openstaande rekeningen betalen of noodzakelijke spullen kopen. De gemeente keert deze toeslag 1 keer per 12 maanden uit.</p>",
@@ -87,21 +104,26 @@
                     "contact": "<p>Voor individuele inkomenstoeslag kunt u terecht bij <a title=\"Naar de contactpagina van Werk en Inkomen\" href=\"https://www.deventer.nl/contactwerkeninkomen\">Werk en Inkomen.</a></p>",
                     "verwijzingLinks": [
                         {
+                            "id": "7b8b8885-35f6-4659-88eb-3ae6eb9ac4fd",
                             "label": "Laag inkomen",
                             "url": "https://www.deventer.nl/laaginkomen"
                         }
                     ],
                     "synonyms": [
                         {
+                            "id": "524d9bff-197b-4183-8361-e4c6bd164afd",
                             "synonym": "iit"
                         },
                         {
+                            "id": "6e42812f-4a49-4713-ba7f-c9d8c8555843",
                             "synonym": "bijstand"
                         },
                         {
+                            "id": "aebaaf0e-f4bc-4117-a1d0-772314ce0aa6",
                             "synonym": "bijstandsuitkering"
                         },
                         {
+                            "id": "c87ae936-1976-4587-8c05-fcb5d7c213a6",
                             "synonym": "extra inkomen"
                         }
                     ],
@@ -110,15 +132,18 @@
                 }
             ],
             "verantwoordelijkeOrganisatie": {
+                "id": "4c25f98c-2aec-46b3-9e4f-0f6b23219cf0",
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
             },
             "bevoegdeOrganisatie": {
+                "id": "9975fcec-8bd3-4f9a-8674-cee7ee6f115e",
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
             }
         },
         {
+            "id": "238f1fc8-ae88-4b4d-8e06-ad084bcc953e",
             "upnLabel": "asbestverwijdering",
             "upnUri": "http://standaarden.overheid.nl/owms/terms/asbestverwijdering",
             "versie": 0,
@@ -128,6 +153,7 @@
             "doelgroep": "eu-burger, eu-bedrijf",
             "vertalingen": [
                 {
+                    "id": "e7cf56f9-0a94-490e-934d-c86b776eab81",
                     "taal": "nl",
                     "productTitelDecentraal": "Asbest verwijderen",
                     "specifiekeTekst": "<p>Asbest is kankerverwekkend materiaal. Wilt u asbest verwijderen? Dan moet u een sloopmelding doen. U heeft namelijk toestemming nodig om asbest te verwijderen.</p>\n <p>Asbest kan voorkomen in:</p>\n <ul>\n <li>vlakke platen (gevels dakbeschot, rondom schoorstenen)</li>\n <li>vlakke gevelplaten met coating (decoratieve buitengevels, galerijen)</li>\n <li>schoorstenen of luchtkanalen (bij kachel of cv-installatie, ventilatiekanaal)</li>\n <li>bloembakken</li>\n <li>golfplaten (daken van schuren en garages)</li>\n <li>standleiding (afvoer toilet)</li>\n <li>brandwerend board (onder cv-ketels, wanden cv-kast, trapbeschot, plafonds)</li>\n <li>vinylzeil of oude vloerbedekking (asbesthoudende onderlaag)</li>\n <li>oude huishoudelijke apparaten</li>\n </ul>\n <p>Voor meer informatie over de sloopmelding:&nbsp;'<a href=\"https://www.deventer.nl/sloopmelding\" title=\"Gebouw of woning slopen\">Gebouw of woning slopen</a>'.</p>",
@@ -143,12 +169,15 @@
                     "verwijzingLinks": [],
                     "synonyms": [
                         {
+                            "id": "944e9ea1-8e6e-419d-9292-b719c9dca0ba",
                             "synonym": "melden en afvoeren van asbest"
                         },
                         {
+                            "id": "10232cfb-2b27-4500-b074-a04bf34c1162",
                             "synonym": "verwijderen asbest"
                         },
                         {
+                            "id": "6bf55f00-863c-4cd1-8a74-0eb5e4c6442e",
                             "synonym": "asbestverwijdering"
                         }
                     ],
@@ -160,15 +189,18 @@
                 }
             ],
             "verantwoordelijkeOrganisatie": {
+                "id": "5d1a5ab5-1ca3-4771-95e3-2a8046022e19",
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
             },
             "bevoegdeOrganisatie": {
+                "id": "a00f54fe-96d8-467f-9058-48c90abf5b13",
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
             }
         },
         {
+            "id": "cc8e7a33-95bf-4fb4-ad28-27c2c6a4221e",
             "upnLabel": "omgevingsvergunning kap",
             "upnUri": "http://standaarden.overheid.nl/owms/terms/omgevingsvergunning_kap",
             "versie": 0,
@@ -178,6 +210,7 @@
             "doelgroep": "eu-burger, eu-bedrijf",
             "vertalingen": [
                 {
+                    "id": "205d4c24-1cad-49d7-bf1a-75c5cc99798b",
                     "taal": "nl",
                     "productTitelDecentraal": "Bomen kappen",
                     "specifiekeTekst": "<p>Wilt u een boom of struik kappen, verplanten of sterk snoeien, dan kunt u een omgevingsvergunning kap nodig hebben (voorheen: kapvergunning).</p>\n <ul>\n <li>U doet de vergunningcheck via het <a href=\"https://www.omgevingsloket.nl/\">Omgevingsloket Online</a>. Hiermee ziet u of u een omgevingsvergunning kap nodig heeft.</li>\n <li>In sommige gevallen heeft de boom een ecologische waarde. Er kan dan een aanvullende natuurtoets nodig zijn.</li>\n </ul>",
@@ -188,48 +221,63 @@
                     "notice": "<h2>Regels</h2>\n<p>In de gemeente Deventer zijn regels voor het kappen van bomen. Deze staan vermeld in de Algemene Plaatselijke Verordening (APV).</p>\n<h2>Bestemmingsplannen</h2>\n<p>In een bestemmingsplan kunnen regels staan ter bescherming van de groeiplaats van bomen en struiken. Zo kunnen er voorwaarden zijn voor het kappen of bewerken van bomen. Dit wordt per geval bekeken.</p>\n<p>De bestemmingsplannen van Deventer vindt u op <a href=\"http://www.ruimtelijkeplannen.nl/\" title=\"Naar de website Ruimtelijkeplannen.nl\">www.ruimtelijkeplannen.nl</a>. U kunt de bestemmingsplannen ook inzien bij Publiekscontacten, Grote Kerkhof 1.</p>",
                     "synonyms": [
                         {
+                            "id": "82dfcf20-430a-4aea-86ab-467e51c09d04",
                             "synonym": "houtopslag"
                         },
                         {
+                            "id": "60fd4a48-52d9-4674-bcb4-cd492020a50a",
                             "synonym": "houtopstand"
                         },
                         {
+                            "id": "cb27c1f5-76bc-4c26-90fb-ac4f3394eb89",
                             "synonym": "kapvergunning"
                         },
                         {
+                            "id": "a77f62f0-2212-4135-a7c3-051f43591b80",
                             "synonym": "bomen kappen"
                         },
                         {
+                            "id": "f1821cc1-1ec2-40f5-acf3-3dc48c52d7cd",
                             "synonym": "velvergunning"
                         },
                         {
+                            "id": "785a9132-ffe0-4da1-a69f-a1b40c623ab6",
                             "synonym": "omhakken"
                         },
                         {
+                            "id": "07e08ea0-15a7-4544-ac8e-9aa24bb10d5a",
                             "synonym": "boomziekte"
                         },
                         {
+                            "id": "bf4d0ecb-941b-4b1b-bd82-5193091bd42a",
                             "synonym": "zieke boom"
                         },
                         {
+                            "id": "71c32d28-032b-4825-947d-1e951de17104",
                             "synonym": "iepziekte"
                         },
                         {
+                            "id": "7255aeb5-5745-4129-97e7-5ae0f34bee32",
                             "synonym": "iepenziekte"
                         },
                         {
+                            "id": "b2abd945-f953-48a5-bf91-169bb43422c7",
                             "synonym": "boom omzagen"
                         },
                         {
+                            "id": "2b53cc0f-5bf5-446b-86c7-fa278a06f0a0",
                             "synonym": "ontheffing boom kappen"
                         },
                         {
+                            "id": "8ed313f5-2563-4454-b03a-5b0e85898c3a",
                             "synonym": "omgevingsvergunning boom"
                         },
                         {
+                            "id": "cf2d63fc-31a6-4a34-a12e-653430e526fa",
                             "synonym": "zieke boom vernietigen"
                         },
                         {
+                            "id": "2293a5fb-3ad5-42e3-ba1a-ba80c22a4c0a",
                             "synonym": "boom is ziek"
                         }
                     ],
@@ -238,15 +286,18 @@
                 }
             ],
             "verantwoordelijkeOrganisatie": {
+                "id": "021e0c12-9263-4696-8c21-7b05290deed0",
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
             },
             "bevoegdeOrganisatie": {
+                "id": "897c12f0-caf3-4e84-bc52-a069283dab03",
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
             }
         },
         {
+            "id": "ef51202c-5825-4426-a781-ee74371076f5",
             "upnLabel": "briefadres",
             "upnUri": "http://standaarden.overheid.nl/owms/terms/briefadres",
             "versie": 0,
@@ -256,6 +307,7 @@
             "doelgroep": "eu-burger",
             "vertalingen": [
                 {
+                    "id": "76781295-bf68-4350-9da8-8afb7fa8f75a",
                     "taal": "nl",
                     "productTitelDecentraal": "Briefadres aanvragen",
                     "specifiekeTekst": "<p>Wilt u uw post ontvangen op een briefadres, dan kunt u dit onder strenge voorwaarden aanvragen bij de gemeente. Een briefadres is bijvoorbeeld het adres van een familielid, vriend of kennis. De hoofdbewoner van dit adres geeft schriftelijk toestemming en zorgt er voor dat de post bij u aankomt. Zo blijft u bereikbaar voor offici&euml;le instanties.</p>",
@@ -266,21 +318,27 @@
                     "contact": "<p>Voor de aanvraag van een briefadres kunt u terecht op de locaties <a href=\"https://www.deventer.nl/contact\" title=\"Naar de pagina Contact\">stadhuis Deventer</a>, <a href=\"https://www.deventer.nl/bathmen\" title=\"Naar de pagina Bathmen\">Bathmen</a> en <a href=\"https://www.deventer.nl/schalkhaar\" title=\"Naar de pagina Schalkhaar\">Schalkhaar</a>.</p>\n<p>Heeft u vragen, neem dan <a href=\"https://www.deventer.nl/contact\" title=\"Naar de pagina Contact\">contact</a> met ons op.</p>",
                     "synonyms": [
                         {
+                            "id": "bcc3e8e7-e7a4-4909-8d10-2380a2ff6597",
                             "synonym": "verzoek briefadres"
                         },
                         {
+                            "id": "30e674b3-e8bf-4cfe-84c7-96608e5f2bcb",
                             "synonym": "postadres"
                         },
                         {
+                            "id": "bcbbe4c6-631e-4f6f-afdb-429ca13131f5",
                             "synonym": "woonadres"
                         },
                         {
+                            "id": "8f743565-4f69-4343-b7ad-41cae7c93d71",
                             "synonym": "tijdelijk adres"
                         },
                         {
+                            "id": "30e29946-b679-4600-9eca-b46099fef0a3",
                             "synonym": "briefadres aanvragen"
                         },
                         {
+                            "id": "aa5dd0e2-2ac7-47fe-9962-b577dec43d01",
                             "synonym": "post op ander adres laten bezorgen"
                         }
                     ],
@@ -289,15 +347,18 @@
                 }
             ],
             "verantwoordelijkeOrganisatie": {
+                "id": "79442cc6-0fbc-461c-a894-b38623303e03",
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
             },
             "bevoegdeOrganisatie": {
+                "id": "dd6eb83b-7d6f-4e41-a3e3-224d1901a53f",
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
             }
         },
         {
+            "id": "4c011820-3371-415a-a2ff-32e21b877af8",
             "upnLabel": "omgevingsvergunning sloop",
             "upnUri": "http://standaarden.overheid.nl/owms/terms/omgevingsvergunning_sloop",
             "versie": 0,
@@ -307,6 +368,7 @@
             "doelgroep": "eu-burger, eu-bedrijf",
             "vertalingen": [
                 {
+                    "id": "7290f2dc-1a13-44f8-b8eb-64b7c4a22a9a",
                     "taal": "nl",
                     "productTitelDecentraal": "Gebouw of woning slopen",
                     "specifiekeTekst": "<p>U mag niet zomaar slopen of asbest verwijderen. U moet hiervoor meestal een melding doen. Dit is verplicht om de veiligheid en gezondheid van mensen te beschermen. Daarnaast wil de gemeente ongewenste sloop tegengaan.</p>\n <p>Soms moet u een omgevingsvergunning aanvragen voor het slopen. Lees hiervoor:&nbsp;<a href=\"https://www.deventer.nl/monumentenvergunning\" title=\"Naar Monument verbouwen of slopen\">Monument verbouwen of slopen</a>.</p>\n <p>Wanneer u mobiel gaat breken (sloopafval ter plaatse bewerken), moet u de gemeente van tevoren op de hoogte stellen van de werkzaamheden.</p>",
@@ -315,24 +377,31 @@
                     "conditions": "<p>U bent verplicht de melding te doen, als u:</p>\n<ul>\n<li>meer dan 10 m&sup3; sloopafval heeft</li>\n<li>asbest gaat verwijderen</li>\n</ul>\n<p>Heeft u minder afval en is er geen asbest aanwezig? U hoeft geen melding te doen. Kijk ook op de pagina&nbsp;<a href=\"https://www.deventer.nl/loketten/digitaal-loket/asbestverwijdering\" title=\"Naar de pagina Asbestverwijdering\">Asbestverwijdering</a>.</p>\n<h2>Sloopafval</h2>\n<ul>\n<li>Het sloopafval scheidt u zoveel mogelijk in verontreinigde en niet-verontreinigde delen.</li>\n<li>Het verontreinigde afval biedt u aan als chemisch afval.</li>\n<li>Het niet-verontreinigde scheidt u in herbruikbare en niet-herbruikbare materialen.</li>\n<li>De niet-herbruikbare delen voert u af.</li>\n<li>De herbruikbare delen (met name beton- en metselwerkpuin) worden door een recyclingbedrijf tot puingranulaat verwerkt.</li>\n</ul>",
                     "synonyms": [
                         {
+                            "id": "6c2518e5-fab3-42d4-a7c8-99b7f0362461",
                             "synonym": "sloopvergunning"
                         },
                         {
+                            "id": "50e311b1-7712-4ef3-ae7e-f93c4c5a174d",
                             "synonym": "sloopmelding"
                         },
                         {
+                            "id": "d5b08f68-3c0a-4487-b343-1c0d964a76a4",
                             "synonym": "asbest verwijderen"
                         },
                         {
+                            "id": "51687656-b1df-41f9-9366-0a91b08d9d45",
                             "synonym": "monument"
                         },
                         {
+                            "id": "8c734162-f563-4611-a401-1a0449d407dd",
                             "synonym": "rijksmonument"
                         },
                         {
+                            "id": "bc9ed46b-af0c-4e25-9190-4307caa17c13",
                             "synonym": "vergunning om te slopen"
                         },
                         {
+                            "id": "9f92d151-320f-459c-9622-1fa5fe25261b",
                             "synonym": "standaardsloop"
                         }
                     ],
@@ -341,15 +410,18 @@
                 }
             ],
             "verantwoordelijkeOrganisatie": {
+                "id": "651c0251-e78f-44e7-b744-30aa0c0d63ee",
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
             },
             "bevoegdeOrganisatie": {
+                "id": "15bfad33-6a58-4723-a34f-4a1dd7b1f59c",
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
             }
         },
         {
+            "id": "5ec5d306-ab4f-4c5d-a6c5-3b38b1eb7b2f",
             "upnLabel": "brp-wijzigingsverzoek",
             "upnUri": "http://standaarden.overheid.nl/owms/terms/brpWijzVzk",
             "versie": 1,
@@ -359,6 +431,7 @@
             "doelgroep": "eu-burger",
             "vertalingen": [
                 {
+                    "id": "cf06735d-3c68-458f-9f93-cbe0db343a34",
                     "taal": "nl",
                     "productTitelDecentraal": "Gegevens in basisregistratie personen (BRP) aanpassen",
                     "specifiekeTekst": "<p>Wijzigt er in Nederland iets in uw persoonlijke gegevens? De gemeente houdt deze wijzigingen automatisch bij in de basisregistratie personen (BRP). Hebben er in het buitenland wijzigingen in uw persoonlijke gegevens plaats, bijvoorbeeld door huwelijk, dan moet u zelf een verzoek tot wijziging indienen aan de balie Publiekscontacten. Dit is ook het geval als er adoptie of geslachtswijziging heeft plaatsgehad in het buitenland.</p>\n <p>Als uw persoonsgegevens in de basisregistratie personen (BRP) niet kloppen, dan moeten deze worden aangepast. U kunt uw persoonsgegevens zelf controleren aan de hand van de gegevens op bijvoorbeeld uw aanslag gemeentelijke belastingen.</p>",
@@ -370,39 +443,51 @@
                     "contact": "<p>Voor het doorgeven van een wijziging in uw persoonlijke gegevens kunt u terecht in <a href=\"http://www.deventer.nl/contact\" title=\"Naar de pagina Contact\">stadhuis Deventer</a>. In Bathmen en Schalkhaar kunt u niet terecht voor het doorgeven van een wijziging in uw persoonlijke gegevens.</p> <p>Voor het instellen van een onderzoek kunt u terecht op de locaties <a href=\"http://www.deventer.nl/contact\" title=\"Naar de pagina Contact\">stadhuis Deventer</a>, <a href=\"http://www.deventer.nl/bathmen\" title=\"Naar de contactgegevens van locatie Bathmen\">Bathmen</a> en <a href=\"http://www.deventer.nl/schalkhaar\" title=\"Naar de contactgegevens van locatie Schalkhaar\">Schalkhaar</a>.</p> <p>Heeft u vragen, neem dan <a href=\"https://www.deventer.nl/contact\" title=\"Naar de pagina Contact\">contact</a> met ons op.</p>",
                     "synonyms": [
                         {
+                            "id": "667d1ec5-bbbf-498e-b36e-bfe70a23801d",
                             "synonym": "aanpassing"
                         },
                         {
+                            "id": "a6d4edce-8a3f-4aed-8585-f95b376d9f0c",
                             "synonym": "aanpassen persoonsgegevens"
                         },
                         {
+                            "id": "85a17ff7-de9f-43c9-a26b-36f8a5259b5a",
                             "synonym": "foutieve registratie GBA"
                         },
                         {
+                            "id": "62b93fa5-3dc4-4764-9bc6-d65903751ec4",
                             "synonym": "onjuiste registratie GBA"
                         },
                         {
+                            "id": "d5a83906-d9ee-4f2f-9474-3a9a749f7da8",
                             "synonym": "wijzigen gegevens GBA"
                         },
                         {
+                            "id": "d3aca33d-d40f-4297-b820-d4b960ba43d5",
                             "synonym": "wijzigen gegevens BRP"
                         },
                         {
+                            "id": "76f21bcf-67db-44f2-8a90-836cc0e7b5d3",
                             "synonym": "geslachtsverandering"
                         },
                         {
+                            "id": "161a0c94-10a1-4a7a-81a5-85dbb4b31dac",
                             "synonym": "gegevens van vorige geslacht verwijderen"
                         },
                         {
+                            "id": "9eb4af0c-ae0a-4f11-9735-4ddf8a3ded3b",
                             "synonym": "gegevens adoptie verwijderen"
                         },
                         {
+                            "id": "cfd645de-ef04-486e-a2f1-fdb0c82f739d",
                             "synonym": "gegevens verbeteren"
                         },
                         {
+                            "id": "38ded400-1d83-4266-83fd-a41af2e6a4ac",
                             "synonym": "fout in mijn persoonlijke gegevens"
                         },
                         {
+                            "id": "bf52830f-6682-467c-b6ac-1e7196141a6b",
                             "synonym": "gegevens bij gemeente corrigeren"
                         }
                     ],
@@ -410,15 +495,18 @@
                 }
             ],
             "verantwoordelijkeOrganisatie": {
+                "id": "663df9cc-61a5-47ac-a7d6-a1f1dd383462",
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
             },
             "bevoegdeOrganisatie": {
+                "id": "c4a7de13-48ad-4077-a46c-ab4483a9f127",
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
             }
         },
         {
+            "id": "2d938d47-fcb5-4fb6-84f9-c6d03f45d79d",
             "upnLabel": "omgevingsvergunning brandveilig gebruik",
             "upnUri": "http://standaarden.overheid.nl/owms/terms/omgVgBrvGebr",
             "versie": 0,
@@ -428,6 +516,7 @@
             "doelgroep": "eu-bedrijf ",
             "vertalingen": [
                 {
+                    "id": "0a7552c1-dc46-44b0-a986-c0658cbe4c06",
                     "taal": "nl",
                     "productTitelDecentraal": "Brandveilig gebruik van gebouwen",
                     "specifiekeTekst": "<p>Bent u verantwoordelijk voor een (horeca)bedrijf, school of instelling? Let er dan op dat het gebruik van de inrichting brandveilig is. De gemeente stelt hiervoor een omgevingsvergunning op. Het kan zijn dat u het gebruik slechts hoeft te melden.</p>",
@@ -443,60 +532,79 @@
                     "contact": "",
                     "synonyms": [
                         {
+                            "id": "bf8c02b5-188a-4934-9b1b-d72ff803c56a",
                             "synonym": "gebruiksvergunning brandpreventie"
                         },
                         {
+                            "id": "46934722-4566-43a0-9073-e4b73ff6e58f",
                             "synonym": "pand"
                         },
                         {
+                            "id": "a8fa9edb-1258-47d4-8ad6-70285e34a810",
                             "synonym": "BRANDVEILIGHEID"
                         },
                         {
+                            "id": "4097bdad-d1fc-476c-b1ed-2968663cf2c5",
                             "synonym": "gebruiksvergunning"
                         },
                         {
+                            "id": "59e7a1ad-c407-4449-8218-dd2ba61fec7b",
                             "synonym": "verzorgingstehuis"
                         },
                         {
+                            "id": "91b24fb2-ae36-4b3c-abd6-36fa9bbc5bd5",
                             "synonym": "kinderdagverblijf"
                         },
                         {
+                            "id": "51aca4d3-cf2e-4fe7-9bc6-c0b8540d336c",
                             "synonym": "basisschool"
                         },
                         {
+                            "id": "1a2fd483-ddd3-4270-8ed7-7e44ea312d38",
                             "synonym": "bouwwerken"
                         },
                         {
+                            "id": "ea35a66a-08c7-49e5-a192-d324a5604315",
                             "synonym": "gebruiksmelding"
                         },
                         {
+                            "id": "576e2bb3-757e-4076-ba71-e86d86b272ab",
                             "synonym": "brand veiligheid"
                         },
                         {
+                            "id": "72aac653-cf3d-450d-a92d-073de6783bbb",
                             "synonym": "brandveiligheid bouwwerk"
                         },
                         {
+                            "id": "a36e33f9-67b3-43a1-a511-4b1c6d13f8ea",
                             "synonym": "vergunning brandveiligheid"
                         },
                         {
+                            "id": "8dfb71f1-5c67-488d-92a7-149d9d0f93f0",
                             "synonym": "gebouw gaan gebruiken"
                         },
                         {
+                            "id": "9d57872e-8d34-4722-82ce-c298e00c0e62",
                             "synonym": "melden ingebruikname gebouw"
                         },
                         {
+                            "id": "1fe80109-4655-4317-8182-8ad2dc350f48",
                             "synonym": "nieuw gebouw in gebruik nemen"
                         },
                         {
+                            "id": "b968cdad-413b-4bd7-b2af-3a70bef4b6b1",
                             "synonym": "nieuw gebouw gereed"
                         },
                         {
+                            "id": "58faac5a-5da1-4eb7-9ccc-245f961a9ad3",
                             "synonym": "toestemming om gebouw te gebruiken"
                         },
                         {
+                            "id": "e353da6b-fdf2-4333-bf53-3b01b3257dc1",
                             "synonym": "melding brand veiligheid"
                         },
                         {
+                            "id": "528e8400-50ad-43b0-a317-2e339451e173",
                             "synonym": "melden brandveiligheid gebouw"
                         }
                     ],
@@ -506,15 +614,18 @@
                 }
             ],
             "verantwoordelijkeOrganisatie": {
+                "id": "cfc7a769-67d5-4ce3-94ba-3a2d07aa994b",
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
             },
             "bevoegdeOrganisatie": {
+                "id": "2eeed720-b218-49a6-bafa-8d42af8161cc",
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
             }
         },
         {
+            "id": "7677e70a-1416-4094-9fba-8bbf759064a1",
             "upnLabel": "omgevingsvergunning milieu",
             "upnUri": "http://standaarden.overheid.nl/owms/terms/omgevingsvergunning_milieu",
             "versie": 0,
@@ -524,6 +635,7 @@
             "doelgroep": "eu-bedrijf",
             "vertalingen": [
                 {
+                    "id": "45958950-8cde-4648-8b99-1d2addd8ec0f",
                     "taal": "nl",
                     "productTitelDecentraal": "Omgevingsvergunning voor het milieu aanvragen",
                     "specifiekeTekst": "<p>Start u een nieuw bedrijf? Verandert uw bestaande bedrijf of breidt u dit uit? Dan kunt u een omgevingsvergunning milieu nodig hebben. In de meeste gevallen hoeft u alleen een milieumelding te doen.</p>",
@@ -538,69 +650,91 @@
                     "contact": "<p>Voor vragen over de Omgevingsvergunning- of melding kunt u de <a href=\"https://www.odijsselland.nl/vergunning-of-melding-activiteitenbesluit/\" title=\"Naar de website van Omgevingsdienst IJsselland\">website</a> van de omgevingsdienst IJsselland raadplegen. U kunt op deze website ook een contactformulier invullen als u vragen heeft.</p>",
                     "synonyms": [
                         {
+                            "id": "955a5586-3131-4318-a90b-74d0177b2e27",
                             "synonym": "milieuvoorwaarden voor bedrijfsactiviteiten"
                         },
                         {
+                            "id": "22d711ac-717f-4ee2-b921-f8234852c38f",
                             "synonym": "Milieuvergunning"
                         },
                         {
+                            "id": "88b03f4c-4fc4-4056-8cda-51ec859f2088",
                             "synonym": "algemene maatregel van bestuur"
                         },
                         {
+                            "id": "87e845ff-508a-4719-a954-e24a89f3a870",
                             "synonym": "milieustraat"
                         },
                         {
+                            "id": "664404e9-e313-46a9-8be8-cc0f57ebd4f7",
                             "synonym": "milieu"
                         },
                         {
+                            "id": "32cf53af-4173-43f6-8066-395b93447389",
                             "synonym": "milieumelding"
                         },
                         {
+                            "id": "496d28d3-12b9-4346-a263-6f74828c2b73",
                             "synonym": "vervuiling"
                         },
                         {
+                            "id": "4bcf9812-32ed-4d5e-9753-3cec4b7c5168",
                             "synonym": "kca-depot"
                         },
                         {
+                            "id": "5e4fcfb9-0e14-4269-b3d3-95db02705143",
                             "synonym": "kunststofverwerking"
                         },
                         {
+                            "id": "15a1b7f7-6f73-43ca-b98e-b409e526b274",
                             "synonym": "rioolwaterzuivering"
                         },
                         {
+                            "id": "8c3a476a-1e78-451a-8ae8-a6d245f79818",
                             "synonym": "onderhoudssteunpunt"
                         },
                         {
+                            "id": "99562670-cb65-4c4e-925a-248686233485",
                             "synonym": "grondopslag"
                         },
                         {
+                            "id": "ea05c9ee-065f-428e-9092-6450192e6ffe",
                             "synonym": "baggeropslag"
                         },
                         {
+                            "id": "655361e7-7ecd-4b44-9dea-31fab539d72a",
                             "synonym": "extrusie"
                         },
                         {
+                            "id": "fed70461-9b1d-4714-bbe5-b2e0fd10772a",
                             "synonym": "kunststofrecycling"
                         },
                         {
+                            "id": "05cd9145-2d5e-425f-a974-18ae33cf9528",
                             "synonym": "opslag oud papier"
                         },
                         {
+                            "id": "79660c31-2468-40c9-bee1-50eb97f2d2e0",
                             "synonym": "textielopslag"
                         },
                         {
+                            "id": "9d655f13-37bb-4b12-ac25-78e1354ba3e5",
                             "synonym": "bunkerstations binnenvaart"
                         },
                         {
+                            "id": "0ca0e701-4357-4043-8e2f-6601b4dfab4d",
                             "synonym": "opslag groenafval"
                         },
                         {
+                            "id": "e7bba8b9-eb36-4972-9a01-4e42ad143304",
                             "synonym": "opslag afval"
                         },
                         {
+                            "id": "1abb7ec9-8e74-4ba0-8ae0-bdc100a5e11b",
                             "synonym": "overslag afval"
                         },
                         {
+                            "id": "fcb7dc69-56bf-4b2a-8ab7-c81cb93b513e",
                             "synonym": "waterzuiveringsinstallatie"
                         }
                     ],
@@ -610,10 +744,12 @@
                 }
             ],
             "verantwoordelijkeOrganisatie": {
+                "id": "5d156000-b3a8-4b77-98e1-9478a51e6b3f",
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
             },
             "bevoegdeOrganisatie": {
+                "id": "519c42e2-cf12-48a5-bcc6-f1c254082546",
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
             }
