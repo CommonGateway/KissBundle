@@ -5,19 +5,21 @@
   "version": "0.0.1",
   "passTrough": true,
   "mapping": {
-    "per_page": "_limit",
-    "orderby": "modified",
+    "limit": "_limit",
+    "orderby": "date",
     "order": "{% if _order.modified is defined %}{{ _order.modified }}{% else %}desc{% endif %}",
-    "openpub-type": "embedded&#46;acf&#46;publicationType.int_compare"
+    "openpub-type": "type",
+    "openpub-audience": "audience"
   },
   "unset": [
     "_limit",
     "_order",
-    "embedded&#46;acf&#46;publicationType",
+    "type",
+    "audience",
     "embedded&#46;acf&#46;publicationEndDate"
   ],
   "cast": {
-    "per_page": "unsetIfValue==_limit",
+    "limit": "unsetIfValue==_limit",
     "openpub-type": "unsetIfValue==embedded&#46;acf&#46;publicationType.int_compare"
   }
 }

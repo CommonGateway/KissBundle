@@ -5,7 +5,7 @@
   "version": "0.0.2",
   "passTrough": false,
   "mapping": {
-    "results": "[{% for key, object in _context %}{% if key matches '/^\\\\d+$/' %}{% if not loop.first %},{% endif %}{{ map('https://buren.nl/mapping/buren.pub.sourceInBodyItem.mapping.json', object)|json_encode }}{% endif %}{% endfor %}]",
+    "results": "[{% for key, object in _context.data %}{% if key matches '/^\\\\d+$/' %}{% if not loop.first %},{% endif %}{{ map('https://buren.nl/mapping/buren.pub.sourceInBodyItem.mapping.json', object)|json_encode }}{% endif %}{% endfor %}]",
     "count": 0
   },
   "cast": {
