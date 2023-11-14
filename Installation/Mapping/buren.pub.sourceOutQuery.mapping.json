@@ -6,21 +6,21 @@
   "passTrough": true,
   "mapping": {
     "limit": "_limit",
-    "orderby": "date",
+    "orderby": "date_modified",
     "order": "{% if _order.modified is defined %}{{ _order.modified }}{% else %}desc{% endif %}",
-    "openpub-type": "type",
-    "openpub-audience": "audience"
+    "type": "openpub-type",
+    "audience": "openpub-audience"
   },
   "unset": [
     "_limit",
     "_order",
-    "type",
-    "audience",
+    "openpub-type",
+    "openpub-audience",
     "embedded&#46;acf&#46;publicationEndDate"
   ],
   "cast": {
     "limit": "unsetIfValue==_limit",
-    "openpub-type": "unsetIfValue==type",
-    "openpub-audience": "unsetIfValue==audience"
+    "type": "unsetIfValue==openpub-type",
+    "audience": "unsetIfValue==openpub-audience"
   }
 }
