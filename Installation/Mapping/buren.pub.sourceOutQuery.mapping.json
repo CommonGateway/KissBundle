@@ -20,6 +20,7 @@
   ],
   "cast": {
     "limit": "unsetIfValue==_limit",
-    "openpub-type": "unsetIfValue==embedded&#46;acf&#46;publicationType.int_compare"
+    "openpub-type": "unsetIfValue==type",
+    "openpub-audience": "unsetIfValue==audience"
   }
 }
