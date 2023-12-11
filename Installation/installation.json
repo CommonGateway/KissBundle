@@ -64,8 +64,8 @@
     "schemas": [
       {
         "reference": "https://kissdevelopment.commonground.nu/notification.schema.json",
-        "path": "notifications",
-        "version": "0.0.2",
+        "path": "kiss/notifications",
+        "version": "0.0.3",
         "methods": [
           "POST",
           "GET"
