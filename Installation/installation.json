@@ -44,6 +44,12 @@
         "reference": "https://buren.nl/source/buren.pub.source.json",
         "path": "kiss_openpub_proxy",
         "methods": ["GET"]
+      },
+      {
+        "name": "BRP proxy endpoint",
+        "reference": "https://buren.nl/source/buren.brp.source.json",
+        "path": "brp_proxy",
+        "methods": ["GET"]
       }
     ],
     "multipleSchemas": [
