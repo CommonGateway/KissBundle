@@ -12,8 +12,8 @@
     "class": "Kiss\\KissBundle\\ActionHandler\\SyncOpenPDCHandler",
     "configuration": {
         "schema": "https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json",
-        "source": "ttps://buren.nl/source/buren.openpdc.source.json",
-        "mapping": "https://buren.nl/mapping/buren.openPDCInMapping.mapping.json",
+        "source": "https://buren.nl/source/buren.openpdc.source.json",
+        "mapping": "https://buren.nl/mapping/buren.openPDCSourceInBody.mapping.json",
         "endpoint": "/owc/pdc/v1/sdg-kiss"
     }
 }
