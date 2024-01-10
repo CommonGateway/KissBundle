@@ -1,0 +1,19 @@
+{
+    "title": "SyncOpenPDCActionBuren",
+    "$id": "https://kissdevelopment.commonground.nu/action/buren.SyncOpenPDC.action.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Action.schema.json",
+    "version": "0.0.1",
+    "listens": ["kiss.default.listens"],
+    "isEnabled": false,
+    "conditions":
+    {
+        "==": [1, 1]
+    },
+    "class": "Kiss\\KissBundle\\ActionHandler\\SyncOpenPDCHandler",
+    "configuration": {
+        "schema": "https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json",
+        "source": "ttps://buren.nl/source/buren.openpdc.source.json",
+        "mapping": "https://buren.nl/mapping/buren.openPDCInMapping.mapping.json",
+        "endpoint": "/owc/pdc/v1/sdg-kiss"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "title": "OpenPDC API",
+    "$id": "https://buren.nl/source/buren.openpdc.source.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
+    "description": "Yard's OpenPDC SDG API",
+    "version": "0.0.1",
+    "location": "!ChangeMe!",
+    "isEnabled" : false
+}

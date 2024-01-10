@@ -1,11 +1,15 @@
 {
     "$id": "https://kissdevelopment.commonground.nu/kiss.sdgLocatie.schema.json",
     "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
-    "version": "0.1",
+    "version": "0.2",
     "title": "SDGLocatie",
     "type": "object",
     "properties": {
       "url": {
+        "type": "string",
+        "nullable": true
+      },
+      "naam": {
         "type": "string",
         "nullable": true
       },
