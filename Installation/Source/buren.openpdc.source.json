@@ -4,6 +4,6 @@
     "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
     "description": "Yard's OpenPDC SDG API",
     "version": "0.0.1",
-    "location": "!ChangeMe!",
+    "location": "https://gemeenteburen-pdc.accept02.yard.nl/wp-json",
     "isEnabled" : false
 }

@@ -10,9 +10,17 @@ use CommonGateway\CoreBundle\Service\MappingService;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Cache\CacheException;
 use Psr\Cache\InvalidArgumentException;
-use Symfony\Component\Form\Extension\Core\Type\CountryType;
 use Symfony\Component\HttpFoundation\Response;
 
+/**
+ * Service responsible for synchronizing OpenPDC objects.
+ *
+ * @author  Conduction BV <info@conduction.nl>, Barry Brands <barry@conduction.nl>.
+ * @license EUPL <https://github.com/ConductionNL/contactcatalogus/blob/master/LICENSE.md>
+ *
+ * @package  Kiss\KissBundle
+ * @category Service
+ */
 class SyncOpenPDCService
 {
     /**
@@ -108,6 +116,12 @@ class SyncOpenPDCService
         $schema = $this->resourceService->getSchema($this->configuration['schema'], 'common-gateway/kiss-bundle');
         $mapping = $this->resourceService->getMapping($this->configuration['mapping'], 'common-gateway/kiss-bundle');
         $endpoint = $this->configuration['endpoint'];
+
+        if ($source === null || $schema === null || $mapping === null || $endpoint === null) {
+            $this->style && $this->style->info('Source, schema, mapping or endpoint not set in action config or findable. Stopping action.');
+
+            return $this->data;
+        }
 
         $sourceConfig = $source->getConfiguration();
 
