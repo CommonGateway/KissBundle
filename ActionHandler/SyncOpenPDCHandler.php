@@ -9,6 +9,15 @@ use Twig\Error\RuntimeError;
 use Twig\Error\SyntaxError;
 use CommonGateway\CoreBundle\ActionHandler\ActionHandlerInterface;
 
+/**
+ * ActionHandler executing SyncOpenPDCService->syncOpenPDCHandler.
+ *
+ * @author  Conduction BV <info@conduction.nl>, Barry Brands <barry@conduction.nl>
+ * @license EUPL <https://github.com/ConductionNL/contactcatalogus/blob/master/LICENSE.md>
+ *
+ * @package  Kiss\KissBundle
+ * @category ActionHandler
+ */
 class SyncOpenPDCHandler implements ActionHandlerInterface
 {
     private SyncOpenPDCService $service;
@@ -31,7 +40,32 @@ class SyncOpenPDCHandler implements ActionHandlerInterface
             'title'      => 'SyncOpenPDCHandler',
             'description'=> 'Handles the sync for the Open PDC.',
             'required'   => [],
-            'properties' => [],
+            'properties' => [
+                'source' => [
+                    'type'        => 'string',
+                    'description' => 'The reference of the source to fetch from.',
+                    'example'     => 'https://buren.nl/source/buren.openpdc.source.jso',
+                    'required'    => true,
+                ],
+                'mapping'   => [
+                    'type'        => 'string',
+                    'description' => 'The reference of the mapping to map each object with.',
+                    'example'     => 'https://buren.nl/mapping/buren.openPDCSourceInBody.mapping.json',
+                    'required'    => true,
+                ],
+                'schema'  => [
+                    'type'        => 'string',
+                    'description' => 'The reference of the schema of the object we are syncing',
+                    'example'     => 'https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json',
+                    'required'    => true,
+                ],
+                'endpoint'  => [
+                    'type'        => 'string',
+                    'description' => 'The endpoint we are fetching from on the source.',
+                    'example'     => '/products',
+                    'required'    => true,
+                ]
+            ],
         ];
     }
 
