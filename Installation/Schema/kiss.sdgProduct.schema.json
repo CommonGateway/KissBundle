@@ -1,10 +1,14 @@
 {
     "$id": "https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json",
     "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
-    "version": "0.1",
+    "version": "0.2",
     "title": "SDGProduct",
     "type": "object",
     "properties": {
+        "id": {
+            "type": "string",
+            "nullable": true
+        },
       "url": {
         "type":"string",
         "format": "uri",
