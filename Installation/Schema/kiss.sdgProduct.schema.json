@@ -1,9 +1,10 @@
 {
     "$id": "https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json",
     "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
-    "version": "0.2",
+    "version": "0.3",
     "title": "SDGProduct",
     "type": "object",
+    "nameProperties": ["upnLabel"],
     "properties": {
         "id": {
             "type": "string",
