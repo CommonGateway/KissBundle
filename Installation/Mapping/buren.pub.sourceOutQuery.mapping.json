@@ -2,25 +2,20 @@
   "title": "pub.sourceOutQuery",
   "$id": "https://buren.nl/mapping/buren.pub.sourceOutQuery.mapping.json",
   "$schema": "https://docs.commongateway.nl/schemas/Mapping.schema.json",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "passTrough": true,
   "mapping": {
     "limit": "_limit",
-    "orderby": "date_modified",
-    "order": "{% if _order.modified is defined %}{{ _order.modified }}{% else %}desc{% endif %}",
-    "type": "openpub-type",
-    "audience": "openpub-audience"
+    "orderby": "post_modified",
+    "order": "{% if _order.modified is defined %}{{ _order.modified }}{% else %}desc{% endif %}"
   },
   "unset": [
     "_limit",
     "_order",
-    "openpub-type",
-    "openpub-audience",
-    "embedded&#46;acf&#46;publicationEndDate"
+    "extend",
+    "embedded"
   ],
   "cast": {
-    "limit": "unsetIfValue==_limit",
-    "type": "unsetIfValue==openpub-type",
-    "audience": "unsetIfValue==openpub-audience"
+    "limit": "unsetIfValue==_limit"
   }
 }
