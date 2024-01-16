@@ -1,0 +1,26 @@
+{
+    "title": "Decos ZGW ZTC",
+    "$id": "https://buren.nl/source/buren.decos.acc.ztc.source.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
+    "version": "0.0.1",
+    "description": "Een source om Decos ACC zaaktypecatalogus (ZTC) mee te benaderen.",
+    "location": "https://zgw-ztc-api-acc.decosasp.com/api",
+    "isEnabled" : false,
+    "headers": {
+        "accept": "application/json",
+        "Accept-Crs": "EPSG:4326",
+        "Content-Crs": "EPSG:4326"
+    },
+    "auth": "oauth",
+    "username": "!ChangeMe!",
+    "password": "!ChangeMe!",
+    "authenticationConfig": {
+        "additionalFields": {
+            "issuer": "!ChangeMe!",
+            "expiresInMinute": "1",
+            "claims": []
+        },
+        "tokenUrl": "https://zgw-ztc-api-acc.decosasp.com/api/v1/token",
+        "tokenField": "token"
+    }
+}

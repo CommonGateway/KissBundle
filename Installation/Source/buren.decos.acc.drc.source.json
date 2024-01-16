@@ -1,0 +1,26 @@
+{
+    "title": "Decos ZGW DRC",
+    "$id": "https://buren.nl/source/buren.decos.acc.drc.source.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
+    "version": "0.0.1",
+    "description": "Een source om Decos ACC documentregistratiecomponent (DRC) mee te benaderen.",
+    "location": "https://stufsuite-jzd-acc.decosasp.com/drcapi/v1",
+    "isEnabled" : false,
+    "headers": {
+        "accept": "application/json",
+        "Accept-Crs": "EPSG:4326",
+        "Content-Crs": "EPSG:4326"
+    },
+    "auth": "oauth",
+    "username": "!ChangeMe!",
+    "password": "!ChangeMe!",
+    "authenticationConfig": {
+        "additionalFields": {
+            "issuer": "!ChangeMe!",
+            "expiresInMinute": "1",
+            "claims": []
+        },
+        "tokenUrl": "https://zgw-ztc-api-acc.decosasp.com/api/v1/token",
+        "tokenField": "token"
+    }
+}
