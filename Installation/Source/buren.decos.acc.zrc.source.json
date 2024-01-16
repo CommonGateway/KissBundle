@@ -21,6 +21,9 @@
             "claims": []
         },
         "tokenUrl": "https://zgw-ztc-api-acc.decosasp.com/api/v1/token",
-        "tokenField": "token"
+        "tokenField": "token",
+        "headers": {
+            "content-type": "application/json"
+        }
     }
 }

@@ -22,6 +22,9 @@
             "claims": []
         },
         "tokenUrl": "!ChangeMe!",
-        "tokenField": "token"
+        "tokenField": "token",
+        "headers": {
+            "content-type": "application/json"
+        }
     }
 }
