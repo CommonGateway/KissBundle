@@ -1,0 +1,16 @@
+{
+    "title": "NotificationRolAction",
+    "$id": "https://kissdevelopment.commonground.nu/action/kiss.NotificationRolAction.action.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Action.schema.json",
+    "version": "0.0.1",
+    "listens": ["kiss.notification.rol"],
+    "conditions":
+    {
+        "==": [1, 1]
+    },
+    "class": "CommonGateway\\CoreBundle\\ActionHandler\\NotificationHandler",
+    "configuration": {
+        "urlLocation": "body.resourceUrl",
+        "entity": "https://vng.opencatalogi.nl/schemas/zrc.rol.schema.json"
+    }
+}
