@@ -1,0 +1,29 @@
+{
+    "title": "Decos ZGW ZRC",
+    "$id": "https://buren.nl/source/buren.decos.acc.zrc.source.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
+    "version": "0.0.1",
+    "description": "Een source om Decos ACC zaakregistratiecomponent (ZRC) mee te benaderen.",
+    "location": "https://stufsuite-jzd-acc.decosasp.com/zrcapi/v1",
+    "isEnabled" : false,
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Crs": "EPSG:4326",
+        "Content-Crs": "EPSG:4326"
+    },
+    "auth": "oauth",
+    "username": "!ChangeMe!",
+    "password": "!ChangeMe!",
+    "authenticationConfig": {
+        "additionalFields": {
+            "issuer": "!ChangeMe!",
+            "expiresInMinute": "1",
+            "claims": []
+        },
+        "tokenUrl": "https://zgw-ztc-api-acc.decosasp.com/api/v1/token",
+        "tokenField": "token",
+        "headers": {
+            "content-type": "application/json"
+        }
+    }
+}

@@ -81,6 +81,18 @@
         ]
       },
       {
+        "reference": "https://kissdevelopment.commonground.nu/notification.schema.json",
+        "path": "kiss/notifications/rollen",
+        "version": "0.0.1",
+        "methods": [
+          "POST",
+          "GET"
+        ],
+        "throws": [
+          "kiss.notification.rol"
+        ]
+      },
+      {
         "reference": "https://kissdevelopment.commonground.nu/kiss.pubPublicatie.schema.json",
         "path": "kiss_openpub_pub",
         "methods": []
