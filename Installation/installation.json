@@ -83,6 +83,7 @@
       {
         "reference": "https://kissdevelopment.commonground.nu/notification.schema.json",
         "path": "kiss/notifications-rollen",
+        "title": "notification rollen",
         "$id": "https://kissdevelopment.commonground.nu/EntityEndpoint/notification.rol.endpoint.json",
         "version": "0.0.1",
         "methods": [
