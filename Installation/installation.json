@@ -91,7 +91,7 @@
           "GET"
         ],
         "throws": [
-          "kiss.notification.rol"
+          "kiss.rol.notification"
         ]
       },
       {
