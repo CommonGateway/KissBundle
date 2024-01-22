@@ -20,7 +20,7 @@
 		"commongateway/corebundle": ">=1.1.63",
 		"common-gateway/brp-bundle": ">=0.1.4",
 		"common-gateway/zgw-bundle": ">=1.0.42",
-		"common-gateway/klanten-bundle": ">=0.1.12",
+		"common-gateway/klanten-bundle": ">=0.1.13",
 		"common-gateway/kvk-bundle": ">=0.1.2",
 		"common-gateway/customer-notifications-bundle": ">=0.0.8"
 	},
