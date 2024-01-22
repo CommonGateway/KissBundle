@@ -2,7 +2,7 @@
     "title": "NotificationAction",
     "$id": "https://kissdevelopment.commonground.nu/action/kiss.NotificationAction.action.json",
     "$schema": "https://docs.commongateway.nl/schemas/Action.schema.json",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "listens": ["kiss.notification"],
     "conditions":
     {
@@ -11,6 +11,7 @@
     "class": "CommonGateway\\CoreBundle\\ActionHandler\\NotificationHandler",
     "configuration": {
         "urlLocation": "body.resourceUrl",
-        "entity": "https://vng.opencatalogi.nl/schemas/zrc.zaak.schema.json"
+        "entity": "https://vng.opencatalogi.nl/schemas/zrc.zaak.schema.json",
+        "sourceIdUrl": true
     }
 }
