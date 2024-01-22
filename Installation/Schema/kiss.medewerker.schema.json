@@ -4,6 +4,7 @@
     "version": "0.2.0",
     "title": "MedewerkerKiss",
     "type": "object",
+    "nameProperties": ["user"],
     "properties": {
       "user": {
         "type": "string",
