@@ -2,7 +2,7 @@
     "title": "NotificationRolAction",
     "$id": "https://kissdevelopment.commonground.nu/action/kiss.NotificationRolAction.action.json",
     "$schema": "https://docs.commongateway.nl/schemas/Action.schema.json",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "listens": ["kiss.rol.notification"],
     "conditions":
     {
@@ -11,6 +11,7 @@
     "class": "CommonGateway\\CoreBundle\\ActionHandler\\NotificationHandler",
     "configuration": {
         "urlLocation": "body.resourceUrl",
-        "entity": "https://vng.opencatalogi.nl/schemas/zrc.rol.schema.json"
+        "entity": "https://vng.opencatalogi.nl/schemas/zrc.rol.schema.json",
+        "sourceIdUrl": true
     }
 }
