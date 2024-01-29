@@ -71,7 +71,8 @@
       {
         "reference": "https://kissdevelopment.commonground.nu/notification.schema.json",
         "path": "kiss/notifications",
-        "version": "0.0.3",
+        "pathRegex": "^kiss/notifications$",
+        "version": "0.0.4",
         "methods": [
           "POST",
           "GET"
@@ -85,7 +86,8 @@
         "path": "kiss/notifications-rollen",
         "title": "notification rollen",
         "$id": "https://kissdevelopment.commonground.nu/EntityEndpoint/notification.rol.endpoint.json",
-        "version": "0.0.1",
+        "pathRegex": "^kiss/notifications-rollen$",
+        "version": "0.0.2",
         "methods": [
           "POST",
           "GET"
