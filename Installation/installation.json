@@ -70,7 +70,10 @@
     "schemas": [
       {
         "reference": "https://kissdevelopment.commonground.nu/notification.schema.json",
-        "path": "kiss/notifications",
+        "path": [
+          "kiss",
+          "notifications"
+        ],
         "pathRegex": "^kiss/notifications$",
         "version": "0.0.4",
         "methods": [
@@ -83,7 +86,10 @@
       },
       {
         "reference": "https://kissdevelopment.commonground.nu/notification.schema.json",
-        "path": "kiss/notifications-rollen",
+        "path": [
+          "kiss",
+          "notifications-rollen"
+        ],
         "title": "notification rollen",
         "$id": "https://kissdevelopment.commonground.nu/EntityEndpoint/notification.rol.endpoint.json",
         "pathRegex": "^kiss/notifications-rollen$",
