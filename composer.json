@@ -19,7 +19,7 @@
         "php": ">=7.4",
 		"commongateway/corebundle": ">=1.1.63",
 		"common-gateway/brp-bundle": ">=0.1.4",
-		"common-gateway/zgw-bundle": ">=1.0.42",
+		"common-gateway/zgw-bundle": ">=1.0.42 || dev-feature/PC108-3/remove-klanten-bundle",
 		"common-gateway/kvk-bundle": ">=0.1.2",
 		"common-gateway/customer-notifications-bundle": ">=0.0.8",
 		"common-gateway/customer-interaction-bundle": ">=0.0.69 || dev-feature/old-contactmomenten-api-barry"
