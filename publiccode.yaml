@@ -87,11 +87,7 @@ dependsOn:
       optional: false
     - name: ZGWBundle
       versionMin: 1.0
-      version: 1.0.42
-      optional: false
-    - name: KlantenBundle
-      versionMin: 0.1
-      version: 0.1.8
+      version: 1.0.43
       optional: false
     - name: KVKBundle
       versionMin: 0.1
@@ -100,6 +96,10 @@ dependsOn:
     - name: CustomerNotificationsBundle
       versionMin: 0.0
       version: 0.0.8
+      optional: false
+    - name: CustomerInteractionBundle
+      versionMin: 0.0
+      version: 0.0.81
       optional: false
 roadmap: null
 inputTypes:
