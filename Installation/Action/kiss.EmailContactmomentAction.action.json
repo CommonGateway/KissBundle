@@ -24,8 +24,7 @@
                 ]
             }
         ]
-    }
-    ,
+    },
     "class": "CommonGateway\\CustomerNotificationsBundle\\ActionHandler\\EmailHandler",
     "configuration": {
         "serviceDNS": "",
