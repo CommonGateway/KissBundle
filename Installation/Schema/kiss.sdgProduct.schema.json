@@ -1,77 +1,77 @@
 {
-    "$id": "https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json",
-    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
-    "version": "0.2",
-    "title": "SDGProduct",
-    "type": "object",
-    "nameProperties": ["upnLabel"],
-    "properties": {
-        "id": {
-            "type": "string",
-            "nullable": true
-        },
-      "url": {
-        "type":"string",
-        "format": "uri",
-        "description":"De unieke URL van dit object binnen deze API.",
-        "default": "{{ selfUrl(object) }}",
-        "readOnly": true
-      },
-      "upnLabel": {
-        "type": "string",
-        "nullable": true
-      },
-      "upnUri": {
-        "type": "string",
-        "nullable": true
-      },
-      "versie": {
-        "type": "string",
-        "nullable": true
-      },
-      "publicatieDatum": {
-        "type": "string",
-        "nullable": true
-      },
-      "productAanwezig": {
-        "type": "boolean",
-        "nullable": true
-      },
-      "productValtOnder": {
-        "type": "string",
-        "nullable": true
-      },
-      "verantwoordelijkeOrganisatie": {
-        "$ref": "https://kissdevelopment.commonground.nu/kiss.sdgLocatie.schema.json"
-      },
-      "bevoegdeOrganisatie": {
-        "$ref": "https://kissdevelopment.commonground.nu/kiss.sdgLocatie.schema.json"
-      },
-      "catalogus": {
-        "type": "string",
-        "nullable": true
-      },
-      "locaties": {
-        "type": "array",
-        "nullable": true
-      },
-      "doelgroep": {
-        "type": "string",
-        "nullable": true
-      },
-      "vertalingen": {
-        "type": "array",
-        "nullable": true,
-        "items": {
-          "$ref": "https://kissdevelopment.commonground.nu/sdgVertaling.schema.json"
-        }
-      },
-      "gerelateerdeProducten": {
-        "type": "array",
-        "nullable": true,
-        "items": {
-          "$ref": "https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json"
-        }
+  "$id": "https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json",
+  "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+  "version": "0.2.0",
+  "title": "SDGProduct",
+  "type": "object",
+  "nameProperties": ["upnLabel"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "nullable": true
+    },
+    "url": {
+      "type":"string",
+      "format": "uri",
+      "description":"De unieke URL van dit object binnen deze API.",
+      "default": "{{ selfUrl(object) }}",
+      "readOnly": true
+    },
+    "upnLabel": {
+      "type": "string",
+      "nullable": true
+    },
+    "upnUri": {
+      "type": "string",
+      "nullable": true
+    },
+    "versie": {
+      "type": "string",
+      "nullable": true
+    },
+    "publicatieDatum": {
+      "type": "string",
+      "nullable": true
+    },
+    "productAanwezig": {
+      "type": "boolean",
+      "nullable": true
+    },
+    "productValtOnder": {
+      "type": "string",
+      "nullable": true
+    },
+    "verantwoordelijkeOrganisatie": {
+      "$ref": "https://kissdevelopment.commonground.nu/kiss.sdgLocatie.schema.json"
+    },
+    "bevoegdeOrganisatie": {
+      "$ref": "https://kissdevelopment.commonground.nu/kiss.sdgLocatie.schema.json"
+    },
+    "catalogus": {
+      "type": "string",
+      "nullable": true
+    },
+    "locaties": {
+      "type": "array",
+      "nullable": true
+    },
+    "doelgroep": {
+      "type": "string",
+      "nullable": true
+    },
+    "vertalingen": {
+      "type": "array",
+      "nullable": true,
+      "items": {
+        "$ref": "https://kissdevelopment.commonground.nu/sdgVertaling.schema.json"
+      }
+    },
+    "gerelateerdeProducten": {
+      "type": "array",
+      "nullable": true,
+      "items": {
+        "$ref": "https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json"
       }
     }
+  }
 }

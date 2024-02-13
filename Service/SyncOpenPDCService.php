@@ -8,6 +8,7 @@ use CommonGateway\CoreBundle\Service\GatewayResourceService;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use CommonGateway\CoreBundle\Service\MappingService;
 use Doctrine\ORM\EntityManagerInterface;
+use Psr\Log\LoggerInterface;
 use Psr\Cache\CacheException;
 use Psr\Cache\InvalidArgumentException;
 use Symfony\Component\HttpFoundation\Response;
@@ -15,7 +16,7 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * Service responsible for synchronizing OpenPDC objects.
  *
- * @author  Conduction BV <info@conduction.nl>, Barry Brands <barry@conduction.nl>.
+ * @author  Conduction BV <info@conduction.nl>, Barry Brands <barry@conduction.nl>, Wilco Louwerse <wilco@conduction.nl>
  * @license EUPL <https://github.com/ConductionNL/contactcatalogus/blob/master/LICENSE.md>
  *
  * @package  Kiss\KissBundle
@@ -47,6 +48,11 @@ class SyncOpenPDCService
      * @var EntityManagerInterface
      */
     private EntityManagerInterface $entityManager;
+    
+    /**
+     * @var LoggerInterface
+     */
+    private LoggerInterface $logger;
 
     /**
      * @var SymfonyStyle|null
@@ -62,19 +68,29 @@ class SyncOpenPDCService
      * @var array
      */
     private array $configuration;
-
+    
+    /**
+     * @param GatewayResourceService $resourceService The Resource Service.
+     * @param CallService $callService                The Call Service.
+     * @param SynchronizationService $syncService     The synchronization service.
+     * @param MappingService $mappingService          The Mapping Service.
+     * @param EntityManagerInterface $entityManager   The entity manager.
+     * @param LoggerInterface $pluginLogger           The plugin version of the logger interface
+     */
     public function __construct(
         GatewayResourceService $resourceService,
         CallService $callService,
         SynchronizationService $syncService,
         MappingService $mappingService,
-        EntityManagerInterface $entityManager
+        EntityManagerInterface $entityManager,
+        LoggerInterface $pluginLogger
     ) {
         $this->resourceService = $resourceService;
         $this->callService = $callService;
         $this->syncService = $syncService;
         $this->mappingService = $mappingService;
         $this->entityManager = $entityManager;
+        $this->logger = $pluginLogger;
     }
 
 
@@ -84,8 +100,6 @@ class SyncOpenPDCService
      * @param SymfonyStyle $style
      *
      * @return self
-     *
-     * @todo change to monolog
      */
     public function setStyle(SymfonyStyle $style): self
     {
@@ -108,6 +122,7 @@ class SyncOpenPDCService
     public function syncOpenPDCHandler(array $data, array $configuration): array
     {
         $this->style && $this->style->info('SyncOpenPDC triggered');
+        $this->logger->info('SyncOpenPDC triggered', ['plugin' => 'common-gateway/kiss-bundle']);
 
         $this->data = $data;
         $this->configuration = $configuration;
@@ -118,14 +133,16 @@ class SyncOpenPDCService
         $endpoint = $this->configuration['endpoint'];
 
         if ($source === null || $schema === null || $mapping === null || $endpoint === null) {
-            $this->style && $this->style->info('Source, schema, mapping or endpoint not set in action config or findable. Stopping action.');
+            $this->style && $this->style->error('Source, schema, mapping or endpoint not set in action config or not findable. Stopping syncOpenPDCHandler action.');
+            $this->logger->error('Source, schema, mapping or endpoint not set in action config or not findable. Stopping syncOpenPDCHandler action.', ['plugin' => 'common-gateway/kiss-bundle']);
 
             return $this->data;
         }
 
         $sourceConfig = $source->getConfiguration();
 
-        $this->style && $this->style->info('Fetching objects..');
+        $this->style && $this->style->info('syncOpenPDCHandler, fetching objects...');
+        $this->logger->info('syncOpenPDCHandler, fetching objects...', ['plugin' => 'common-gateway/kiss-bundle']);
         $response = $this->callService->getAllResults(
             $source,
             $endpoint,
@@ -145,7 +162,8 @@ class SyncOpenPDCService
         }
         $this->entityManager->flush();
 
-        $this->style && $this->style->success('Synchronized ' . count($responseItems) . ' objects');
+        $this->style && $this->style->success('syncOpenPDCHandler synchronized ' . count($responseItems) . ' objects');
+        $this->logger->info('syncOpenPDCHandler synchronized ' . count($responseItems) . ' objects', ['plugin' => 'common-gateway/kiss-bundle']);
 
         $this->data['response'] = new Response(json_encode($responseItems), 200);
 
