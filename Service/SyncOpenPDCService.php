@@ -5,12 +5,14 @@ namespace Kiss\KissBundle\Service;
 use App\Service\SynchronizationService;
 use CommonGateway\CoreBundle\Service\CallService;
 use CommonGateway\CoreBundle\Service\GatewayResourceService;
+use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use CommonGateway\CoreBundle\Service\MappingService;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Cache\CacheException;
 use Psr\Cache\InvalidArgumentException;
+use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
@@ -58,6 +60,11 @@ class SyncOpenPDCService
      * @var SymfonyStyle|null
      */
     private ?SymfonyStyle $style = null;
+    
+    /**
+     * @var OutputInterface|null
+     */
+    private ?OutputInterface $output = null;
 
     /**
      * @var array
@@ -92,18 +99,20 @@ class SyncOpenPDCService
         $this->entityManager = $entityManager;
         $this->logger = $pluginLogger;
     }
-
-
+    
+    
     /**
      * Set symfony style in order to output to the console.
      *
      * @param SymfonyStyle $style
+     * @param OutputInterface|null $output
      *
      * @return self
      */
-    public function setStyle(SymfonyStyle $style): self
+    public function setStyle(SymfonyStyle $style, ?OutputInterface $output = null): self
     {
         $this->style = $style;
+        $this->output = $output;
 
         return $this;
 
@@ -141,13 +150,18 @@ class SyncOpenPDCService
 
         $sourceConfig = $source->getConfiguration();
 
-        $this->style && $this->style->info('syncOpenPDCHandler, fetching objects...');
-        $this->logger->info('syncOpenPDCHandler, fetching objects...', ['plugin' => 'common-gateway/kiss-bundle']);
+        $this->style && $this->style->info("syncOpenPDCHandler {$this->configuration['source']}, fetching objects...");
+        $this->logger->info("syncOpenPDCHandler {$this->configuration['source']}, fetching objects...", ['plugin' => 'common-gateway/kiss-bundle']);
         $response = $this->callService->getAllResults(
             $source,
             $endpoint,
             $sourceConfig
         );
+        
+        $this->style && $this->style->info('syncOpenPDCHandler, syncing objects...');
+        $this->logger->info('syncOpenPDCHandler, syncing objects...', ['plugin' => 'common-gateway/kiss-bundle']);
+        
+        $this->output && count($response) !== 0 && $progressBar = new ProgressBar($this->output, count($response));
 
         $responseItems = [];
         foreach ($response as $result) {
@@ -155,12 +169,20 @@ class SyncOpenPDCService
 
             $synchronization = $this->syncService->findSyncBySource($source, $schema, $result['id']);
             // $synchronization->setMapping($mapping);
-            $synchronization = $this->syncService->synchronize($synchronization, $result);
+            $synchronization = $this->syncService->synchronize($synchronization, $result, true);
             $this->entityManager->persist($synchronization);
 
             $responseItems[] = $synchronization->getObject()->toArray();
+            
+            $this->output && isset($progressBar) && $progressBar->advance();
         }
+        $this->style && $this->style->newLine();
+        $this->style && $this->style->info('syncOpenPDCHandler, flushing objects...');
+        $this->logger->info('syncOpenPDCHandler, flushing objects...', ['plugin' => 'common-gateway/kiss-bundle']);
+        
         $this->entityManager->flush();
+        
+        $this->output && isset($progressBar) && $progressBar->finish();
 
         $this->style && $this->style->success('syncOpenPDCHandler synchronized ' . count($responseItems) . ' objects');
         $this->logger->info('syncOpenPDCHandler synchronized ' . count($responseItems) . ' objects', ['plugin' => 'common-gateway/kiss-bundle']);

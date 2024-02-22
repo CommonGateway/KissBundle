@@ -82,11 +82,15 @@ class SyncOpenPDCCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $action = $this->resourceService->getAction('https://kissdevelopment.commonground.nu/action/buren.SyncOpenPDC.action.json', 'common-gateway/kiss-bundle');
+        $action1 = $this->resourceService->getAction('https://kissdevelopment.commonground.nu/action/buren.SyncOpenPDCSDG.action.json', 'common-gateway/kiss-bundle');
+        $action2 = $this->resourceService->getAction('https://kissdevelopment.commonground.nu/action/buren.SyncOpenPDC.action.json', 'common-gateway/kiss-bundle');
 
         $style = new SymfonyStyle($input, $output);
-        $this->syncOpenPDCService->setStyle($style);
-        if ($this->syncOpenPDCService->syncOpenPDCHandler([], $action->getConfiguration()) === null) {
+        $this->syncOpenPDCService->setStyle($style, $output);
+        if ($this->syncOpenPDCService->syncOpenPDCHandler([], $action1->getConfiguration()) === null) {
+            return Command::FAILURE;
+        }
+        if ($this->syncOpenPDCService->syncOpenPDCHandler([], $action2->getConfiguration()) === null) {
             return Command::FAILURE;
         }
 
