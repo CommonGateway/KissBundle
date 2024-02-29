@@ -12,12 +12,15 @@
     "vertalingen.0.specifiekeTekst": "content",
     "vertalingen.0.procedureBeschrijving": "{% for qa in faq %}{% if 'meenemen' in qa.question|lower %}<h2>{{qa.question}}</h2>{{qa.answer}}{% endif %}{% endfor %}",
     "vertalingen.0.kostenEnBetaalmethoden": "{% for qa in faq %}{% if qa.question in ['Kosten', 'Tarieven'] or 'wat kost' in qa.question|lower %}<h2>{{qa.question}}</h2>{{qa.answer}}{% endif %}{% endfor %}",
-    "vertalingen.0.vereisten": "{% for qa in faq %}{% if 'voorwaarden' in qa.question|lower %}<h2>{{qa.question}}</h2>{{qa.answer}}{% endif %}{% endfor %}",
-    "vertalingen.0.faq": "{% for qa in faq %}<h2>{{qa.question}}</h2>{{qa.answer}}{% endif %}{% endfor %}"
+    "vertalingen.0.conditions": "{% for qa in faq %}{% if 'voorwaarden' in qa.question|lower %}<h2>{{qa.question}}</h2>{{qa.answer}}{% endif %}{% endfor %}",
+    "vertalingen.0.notice": "{% for qa in faq %}{% if 'meenemen' not in qa.question|lower and qa.question not in ['Kosten', 'Tarieven'] and 'wat kost' not in qa.question|lower and 'voorwaarden' not in qa.question|lower %}<h2>{{qa.question}}</h2>{{qa.answer}}{% endif %}{% endfor %}",
+    "vertalingen.0.faq": "{% set questions = [] %}{% for qa in faq %}{% if 'meenemen' not in qa.question|lower and qa.question not in ['Kosten', 'Tarieven'] and 'wat kost' not in qa.question|lower and 'voorwaarden' not in qa.question|lower %}{% set questions = questions|merge([qa]) %}{% endif %}{% endfor %}{{ questions|json_encode }}"
   },
   "cast": {
     "vertalingen.0.procedureBeschrijving": "unsetIfValue==",
     "vertalingen.0.kostenEnBetaalmethoden": "unsetIfValue==",
-    "vertalingen.0.vereisten": "unsetIfValue=="
+    "vertalingen.0.conditions": "unsetIfValue==",
+    "vertalingen.0.notice": "unsetIfValue==",
+    "vertalingen.0.faq": ["jsonToArray","unsetIfValue=="]
   }
 }
