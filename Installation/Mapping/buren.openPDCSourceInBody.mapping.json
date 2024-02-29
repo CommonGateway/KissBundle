@@ -2,12 +2,25 @@
   "title": "openPDCSourceInBody",
   "$id": "https://buren.nl/mapping/buren.openPDCSourceInBody.mapping.json",
   "$schema": "https://docs.commongateway.nl/schemas/Mapping.schema.json",
-  "version": "0.0.1",
-  "passTrough": true,
+  "version": "0.0.2",
+  "passTrough": false,
   "mapping": {
-    "vertalingen": "[{%for vertaling in vertalingen%}{% if not loop.first %},{% endif %}{{ map(\"https://buren.nl/mapping/buren.openPDCVertaling.mapping.json\", vertaling)|json_encode }}{%endfor%}]"
+    "id": "id",
+    "upnLabel": "title",
+    "publicatieDatum": "date",
+    "vertalingen.0.taal": "language",
+    "vertalingen.0.specifiekeTekst": "content",
+    "vertalingen.0.procedureBeschrijving": "{% for qa in faq %}{% if 'meenemen' in qa.question|lower %}<h2>{{qa.question}}</h2>{{qa.answer}}{% endif %}{% endfor %}",
+    "vertalingen.0.kostenEnBetaalmethoden": "{% for qa in faq %}{% if qa.question in ['Kosten', 'Tarieven'] or 'wat kost' in qa.question|lower %}<h2>{{qa.question}}</h2>{{qa.answer}}{% endif %}{% endfor %}",
+    "vertalingen.0.conditions": "{% for qa in faq %}{% if 'voorwaarden' in qa.question|lower %}<h2>{{qa.question}}</h2>{{qa.answer}}{% endif %}{% endfor %}",
+    "vertalingen.0.notice": "{% for qa in faq %}{% if 'meenemen' not in qa.question|lower and qa.question not in ['Kosten', 'Tarieven'] and 'wat kost' not in qa.question|lower and 'voorwaarden' not in qa.question|lower %}<h2>{{qa.question}}</h2>{{qa.answer}}{% endif %}{% endfor %}",
+    "vertalingen.0.faq": "{% set questions = [] %}{% for qa in faq %}{% if 'meenemen' not in qa.question|lower and qa.question not in ['Kosten', 'Tarieven'] and 'wat kost' not in qa.question|lower and 'voorwaarden' not in qa.question|lower %}{% set questions = questions|merge([qa]) %}{% endif %}{% endfor %}{{ questions|json_encode }}"
   },
   "cast": {
-    "vertalingen": "jsonToArray"
+    "vertalingen.0.procedureBeschrijving": "unsetIfValue==",
+    "vertalingen.0.kostenEnBetaalmethoden": "unsetIfValue==",
+    "vertalingen.0.conditions": "unsetIfValue==",
+    "vertalingen.0.notice": "unsetIfValue==",
+    "vertalingen.0.faq": ["jsonToArray","unsetIfValue=="]
   }
 }

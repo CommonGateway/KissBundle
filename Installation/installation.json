@@ -46,6 +46,18 @@
         "methods": ["GET"]
       },
       {
+        "name": "Buren OpenPub API audience proxy endpoint",
+        "reference": "https://buren.nl/source/buren.pub.audience.source.json",
+        "path": "openpub/openpub_skill",
+        "methods": ["GET"]
+      },
+      {
+        "name": "Buren OpenPub API type proxy endpoint",
+        "reference": "https://buren.nl/source/buren.pub.type.source.json",
+        "path": "openpub/openpub_type",
+        "methods": ["GET"]
+      },
+      {
         "name": "BRP proxy endpoint",
         "reference": "https://buren.nl/source/buren.brp.source.json",
         "path": "brp_proxy",
