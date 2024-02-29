@@ -10,9 +10,10 @@
     "publicatieDatum": "date",
     "vertalingen.0.taal": "language",
     "vertalingen.0.specifiekeTekst": "content",
-    "vertalingen.0.procedureBeschrijving": "{% for qa in faq %}{% if qa.question == 'Meenemen' %}{{qa.answer}}{% endif %}{% endfor %}",
-    "vertalingen.0.kostenEnBetaalmethoden": "{% for qa in faq %}{% if qa.question == 'Kosten' %}{{qa.answer}}{% endif %}{% endfor %}",
-    "vertalingen.0.vereisten": "{% for qa in faq %}{% if qa.question == 'Voorwaarden' %}{{qa.answer}}{% endif %}{% endfor %}"
+    "vertalingen.0.procedureBeschrijving": "{% for qa in faq %}{% if 'meenemen' in qa.question|lower %}<h2>{{qa.question}}</h2>{{qa.answer}}{% endif %}{% endfor %}",
+    "vertalingen.0.kostenEnBetaalmethoden": "{% for qa in faq %}{% if qa.question in ['Kosten', 'Tarieven'] or 'wat kost' in qa.question|lower %}<h2>{{qa.question}}</h2>{{qa.answer}}{% endif %}{% endfor %}",
+    "vertalingen.0.vereisten": "{% for qa in faq %}{% if 'voorwaarden' in qa.question|lower %}<h2>{{qa.question}}</h2>{{qa.answer}}{% endif %}{% endfor %}",
+    "vertalingen.0.faq": "{% for qa in faq %}<h2>{{qa.question}}</h2>{{qa.answer}}{% endif %}{% endfor %}"
   },
   "cast": {
     "vertalingen.0.procedureBeschrijving": "unsetIfValue==",
