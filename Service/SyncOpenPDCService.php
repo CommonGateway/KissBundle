@@ -19,7 +19,7 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * Service responsible for synchronizing OpenPDC objects.
  *
- * @author  Conduction BV <info@conduction.nl>, Barry Brands <barry@conduction.nl>, Wilco Louwerse <wilco@conduction.nl>
+ * @author  Conduction BV <info@conduction.nl>, Barry Brands <barry@conduction.nl>, Wilco Louwerse <wilco@conduction.nl> 
  * @license EUPL <https://github.com/ConductionNL/contactcatalogus/blob/master/LICENSE.md>
  *
  * @package  Kiss\KissBundle
