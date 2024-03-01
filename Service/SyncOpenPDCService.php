@@ -2,6 +2,7 @@
 
 namespace Kiss\KissBundle\Service;
 
+use App\Entity\ObjectEntity;
 use CommonGateway\CoreBundle\Service\CallService;
 use CommonGateway\CoreBundle\Service\GatewayResourceService;
 use CommonGateway\CoreBundle\Service\HydrationService;
@@ -169,7 +170,11 @@ class SyncOpenPDCService
             
             $object = $this->hydrationService->searchAndReplaceSynchronizations($result, $source, $schema, true, true);
 
-            $responseItems[] = $object->toArray();
+            if ($object instanceof ObjectEntity === true) {
+                $responseItems[] = $object->toArray();
+            } else {
+                $responseItems[] = $object;
+            }
             
             $this->output && isset($progressBar) && $progressBar->advance();
         }
