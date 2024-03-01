@@ -2,9 +2,9 @@
 
 namespace Kiss\KissBundle\Service;
 
-use App\Service\SynchronizationService;
 use CommonGateway\CoreBundle\Service\CallService;
 use CommonGateway\CoreBundle\Service\GatewayResourceService;
+use CommonGateway\CoreBundle\Service\HydrationService;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use CommonGateway\CoreBundle\Service\MappingService;
@@ -35,11 +35,11 @@ class SyncOpenPDCService
      * @var CallService
      */
     private CallService $callService;
-
+    
     /**
-     * @var SynchronizationService
+     * @var HydrationService
      */
-    private SynchronizationService $syncService;
+    private HydrationService $hydrationService;
 
     /**
      * @var MappingService
@@ -79,7 +79,7 @@ class SyncOpenPDCService
     /**
      * @param GatewayResourceService $resourceService The Resource Service.
      * @param CallService $callService                The Call Service.
-     * @param SynchronizationService $syncService     The synchronization service.
+     * @param HydrationService $hydrationService      The hydration service.
      * @param MappingService $mappingService          The Mapping Service.
      * @param EntityManagerInterface $entityManager   The entity manager.
      * @param LoggerInterface $pluginLogger           The plugin version of the logger interface
@@ -87,14 +87,14 @@ class SyncOpenPDCService
     public function __construct(
         GatewayResourceService $resourceService,
         CallService $callService,
-        SynchronizationService $syncService,
+        HydrationService $hydrationService,
         MappingService $mappingService,
         EntityManagerInterface $entityManager,
         LoggerInterface $pluginLogger
     ) {
         $this->resourceService = $resourceService;
         $this->callService = $callService;
-        $this->syncService = $syncService;
+        $this->hydrationService = $hydrationService;
         $this->mappingService = $mappingService;
         $this->entityManager = $entityManager;
         $this->logger = $pluginLogger;
@@ -166,13 +166,10 @@ class SyncOpenPDCService
         $responseItems = [];
         foreach ($response as $result) {
             $result = $this->mappingService->mapping($mapping, $result);
+            
+            $object = $this->hydrationService->searchAndReplaceSynchronizations($result, $source, $schema, true, true);
 
-            $synchronization = $this->syncService->findSyncBySource($source, $schema, $result['id']);
-            // $synchronization->setMapping($mapping);
-            $synchronization = $this->syncService->synchronize($synchronization, $result, true);
-            $this->entityManager->persist($synchronization);
-
-            $responseItems[] = $synchronization->getObject()->toArray();
+            $responseItems[] = $object->toArray();
             
             $this->output && isset($progressBar) && $progressBar->advance();
         }
