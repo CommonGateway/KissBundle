@@ -3,6 +3,8 @@
 namespace Kiss\KissBundle\ActionHandler;
 
 use Kiss\KissBundle\Service\SyncOpenPDCService;
+use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
 use Twig\Error\LoaderError;
 use Twig\Error\RuntimeError;
@@ -83,4 +85,20 @@ class SyncOpenPDCHandler implements ActionHandlerInterface
     {
         return $this->service->syncOpenPDCHandler($data, $configuration);
     }
+    
+    /**
+     * Set symfony style in order to output to the console.
+     *
+     * @param SymfonyStyle $style
+     * @param OutputInterface|null $output
+     *
+     * @return self
+     */
+    public function setStyle(SymfonyStyle $style, ?OutputInterface $output = null): self
+    {
+        $this->service->setStyle($style, $output);
+        
+        return $this;
+        
+    }//end setStyle()
 }

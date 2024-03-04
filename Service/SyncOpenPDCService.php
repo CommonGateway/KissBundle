@@ -162,7 +162,9 @@ class SyncOpenPDCService
         $this->style && $this->style->info('syncOpenPDCHandler, syncing objects...');
         $this->logger->info('syncOpenPDCHandler, syncing objects...', ['plugin' => 'common-gateway/kiss-bundle']);
         
-        $this->output && count($response) !== 0 && $progressBar = new ProgressBar($this->output, count($response));
+        $responseCount = count($response);
+        $this->output && count($response) !== 0 && $progressBar = new ProgressBar($this->output, $responseCount);
+        $this->output === null && $this->style->writeln('0 / '.$responseCount);
 
         $responseItems = [];
         foreach ($response as $result) {
@@ -177,14 +179,18 @@ class SyncOpenPDCService
             }
             
             $this->output && isset($progressBar) && $progressBar->advance();
+            if ($this->output === null && count($responseItems) !== $responseCount && count($responseItems) % 25 === 0) {
+                $this->style->writeln(count($responseItems).' / '.$responseCount);
+            }
         }
+        $this->output && isset($progressBar) && $progressBar->finish();
+        $this->output === null && $this->style->writeln(count($responseItems).' / '.$responseCount);
+        
         $this->style && $this->style->newLine();
         $this->style && $this->style->info('syncOpenPDCHandler, flushing objects...');
         $this->logger->info('syncOpenPDCHandler, flushing objects...', ['plugin' => 'common-gateway/kiss-bundle']);
         
         $this->entityManager->flush();
-        
-        $this->output && isset($progressBar) && $progressBar->finish();
 
         $this->style && $this->style->success('syncOpenPDCHandler synchronized ' . count($responseItems) . ' objects');
         $this->logger->info('syncOpenPDCHandler synchronized ' . count($responseItems) . ' objects', ['plugin' => 'common-gateway/kiss-bundle']);
