@@ -2,10 +2,11 @@
   "title": "openPDCSDGSourceInBody",
   "$id": "https://buren.nl/mapping/buren.openPDCSDGSourceInBody.mapping.json",
   "$schema": "https://docs.commongateway.nl/schemas/Mapping.schema.json",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "passTrough": true,
   "mapping": {
-    "vertalingen": "[{%for vertaling in vertalingen%}{% if not loop.first %},{% endif %}{{ map(\"https://buren.nl/mapping/buren.openPDCSDGVertaling.mapping.json\", vertaling)|json_encode }}{%endfor%}]"
+    "_sourceId": "id",
+    "vertalingen": "{{ map(\"https://buren.nl/mapping/buren.openPDCSDGVertaling.mapping.json\", {'listInput': vertalingen, 'id': id}, true)|json_encode }}"
   },
   "cast": {
     "vertalingen": "jsonToArray"
