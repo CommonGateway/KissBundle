@@ -2,8 +2,9 @@
     "title": "SyncPubAction",
     "$id": "https://kissdevelopment.commonground.nu/action/kiss.SyncPubAction.action.json",
     "$schema": "https://docs.commongateway.nl/schemas/Action.schema.json",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "listens": ["kiss.default.listens"],
+    "isEnabled": false,
     "conditions":
     {
         "==": [1, 1]
