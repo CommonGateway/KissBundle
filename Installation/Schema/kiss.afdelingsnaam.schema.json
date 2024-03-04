@@ -1,7 +1,7 @@
 {
     "$id": "https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json",
     "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
-    "version": "0.2",
+    "version": "0.3",
     "title": "Afdelingsnaam",
     "type": "object",
     "properties": {
@@ -11,6 +11,7 @@
         },
         "email": {
           "type": "string",
+          "format": "email",
           "nullable": true
         }
     }
