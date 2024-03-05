@@ -1,6 +1,11 @@
 {
     "https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json": [
         {
+            "_id": "d1d312ae-5680-4a7d-8b26-4eaaaf3ace66",
+            "name": "Geen afdeling",
+            "email": ""
+        },
+        {
             "_id": "fa28617a-d7c3-44d3-8b10-85ce026affda",
             "name": "Afval",
             "email": "afval@kiss.commonground.nu"
