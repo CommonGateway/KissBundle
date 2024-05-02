@@ -7,8 +7,9 @@
   "mapping": {
     "_sourceId": "id",
     "user": "bp_profile.email",
-    "contact.achternaam": "bp_profile.lastname",
-    "contact.voornaam": "bp_profile.firstname",
+    "contact.persoon.voornaam": "bp_profile.firstname",
+    "contact.persoon.voorvoegselAchternaam": null,
+    "contact.persoon.achternaam": "bp_profile.lastname",
     "function": "bp_profile.function",
     "department": "{{ bp_profile.teams|join(', ') }}",
     "description": "bp_profile.working_days"
