@@ -17,7 +17,7 @@
   "configuration": {
     "schema": "https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json",
     "source": "https://buren.nl/source/buren.buddypress.source.json",
-    "mapping": "https://buren.nl/mapping/buren.openPDCSDGSourceInBody.mapping.json",
+    "mapping": "https://buren.nl/mapping/buren.buddyPressSourceInBody.mapping.json",
     "endpoint": "/wp/v2/users"
   }
 }

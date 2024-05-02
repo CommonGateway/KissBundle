@@ -3,6 +3,9 @@
     "$id": "https://buren.nl/source/buren.buddypress.source.json",
     "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
     "version": "0.0.1",
-    "location": "",
-    "isEnabled" : false
+    "location": "https://gemeenteburen-intranet.accept02.yard.nl/wp-json",
+    "isEnabled" : false,
+    "auth": "username-password",
+    "username": "!ChangeMe!",
+    "password": "!ChangeMe!"
 }
