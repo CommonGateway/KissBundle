@@ -1,21 +1,23 @@
 {
   "$id": "https://kissdevelopment.commonground.nu/action/buren.SyncBuddyPressAction.action.json",
   "$schema": "https://docs.commongateway.nl/schemas/Action.schema.json",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "title": "SyncBuddyPressAction",
-  "description": "Syncs the SDG+ to elasticSearch",
+  "description": "Syncs buddy press to the gateway",
   "listens": [
     "kiss.default.listens"
   ],
   "isEnabled": false,
   "throws": [],
-  "conditions": [],
-  "class": "Kiss\\KissBundle\\ActionHandler\\SyncElasticHandler",
-  "priority": 0,
-  "async": false,
+  "conditions":
+  {
+    "==": [1, 1]
+  },
+  "class": "Kiss\\KissBundle\\ActionHandler\\SyncOpenPDCHandler",
   "configuration": {
-    "burenSource": "https://buren.nl/source/buren.buddypress.source.json",
-    "elasticSource": "https://kissdevelopment.commonground.nu/source/kiss.enterpriseSearchPrivate.source.json",
-    "sdgMapping": "https://buren.nl/mapping/buren.buddyPressElastic.mapping.json"
+    "schema": "https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json",
+    "source": "https://buren.nl/source/buren.buddypress.source.json",
+    "mapping": "https://buren.nl/mapping/buren.buddyPressSourceInBody.mapping.json",
+    "endpoint": "/wp/v2/users"
   }
 }

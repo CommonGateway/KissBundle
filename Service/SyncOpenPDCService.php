@@ -2,6 +2,7 @@
 
 namespace Kiss\KissBundle\Service;
 
+use App\Entity\Gateway as Source;
 use App\Entity\ObjectEntity;
 use CommonGateway\CoreBundle\Service\CallService;
 use CommonGateway\CoreBundle\Service\GatewayResourceService;
@@ -165,7 +166,8 @@ class SyncOpenPDCService
         $responseCount = count($response);
         $this->output && count($response) !== 0 && $progressBar = new ProgressBar($this->output, $responseCount);
         $this->output === null && $this->style->writeln('0 / '.$responseCount);
-
+        
+        $idsSynced     = [];
         $responseItems = [];
         foreach ($response as $result) {
             $result = $this->mappingService->mapping($mapping, $result);
@@ -176,6 +178,11 @@ class SyncOpenPDCService
                 $responseItems[] = $object->toArray();
             } else {
                 $responseItems[] = $object;
+            }
+            
+            // Get all synced sourceIds.
+            if (empty($object->getSynchronizations()) === false && $object->getSynchronizations()[0]->getSourceId() !== null) {
+                $idsSynced[] = $object->getSynchronizations()[0]->getSourceId();
             }
             
             $this->output && isset($progressBar) && $progressBar->advance();
@@ -191,12 +198,56 @@ class SyncOpenPDCService
         $this->logger->info('syncOpenPDCHandler, flushing objects...', ['plugin' => 'common-gateway/kiss-bundle']);
         
         $this->entityManager->flush();
+        
+        $this->style && $this->style->info('syncOpenPDCHandler, checking if we need to delete objects that no longer exist in the source...');
+        $this->logger->info('syncOpenPDCHandler, checking if we need to delete objects that no longer exist in the source...', ['plugin' => 'common-gateway/kiss-bundle']);
+        $deletedObjectsCount = $this->deleteNonExistingObjects($idsSynced, $source, $this->configuration['schema']);
 
-        $this->style && $this->style->success('syncOpenPDCHandler synchronized ' . count($responseItems) . ' objects');
-        $this->logger->info('syncOpenPDCHandler synchronized ' . count($responseItems) . ' objects', ['plugin' => 'common-gateway/kiss-bundle']);
+        $this->style && $this->style->success('syncOpenPDCHandler synchronized ' . count($responseItems) . ' objects and deleted ' . $deletedObjectsCount . ' objects');
+        $this->logger->info('syncOpenPDCHandler synchronized ' . count($responseItems) . ' objects and deleted ' . $deletedObjectsCount . ' objects', ['plugin' => 'common-gateway/kiss-bundle']);
 
         $this->data['response'] = new Response(json_encode($responseItems), 200);
 
         return $this->data;
     }
+    
+    
+    /**
+     * Checks if existing objects still exist in the source, if not deletes them.
+     *
+     * @param array       $idsSynced ID's from objects we just synced from the source.
+     * @param Source      $source    These objects belong to.
+     * @param string      $schemaRef These objects belong to.
+     *
+     * @return int Count of deleted objects.
+     */
+    public function deleteNonExistingObjects(array $idsSynced, Source $source, string $schemaRef): int
+    {
+        // Get all existing sourceIds.
+        $source            = $this->entityManager->find('App:Gateway', $source->getId()->toString());
+        $existingSourceIds = [];
+        $existingObjects   = [];
+        foreach ($source->getSynchronizations() as $synchronization) {
+            if ($synchronization->getEntity()->getReference() === $schemaRef && $synchronization->getSourceId() !== null) {
+                $existingSourceIds[] = $synchronization->getSourceId();
+                $existingObjects[]   = $synchronization->getObject();
+            }
+        }
+        
+        // Check if existing sourceIds are in the array of new synced sourceIds.
+        $objectIdsToDelete = array_diff($existingSourceIds, $idsSynced);
+        
+        // If not it means the object does not exist in the source anymore and should be deleted here.
+        $deletedObjectsCount = 0;
+        foreach ($objectIdsToDelete as $key => $id) {
+            $this->logger->info("Object $id does not exist at the source, deleting.", ['plugin' => 'common-gateway/woo-bundle']);
+            $this->entityManager->remove($existingObjects[$key]);
+            $deletedObjectsCount++;
+        }
+        
+        $this->entityManager->flush();
+        
+        return $deletedObjectsCount;
+        
+    }//end deleteNonExistingObjects()
 }
