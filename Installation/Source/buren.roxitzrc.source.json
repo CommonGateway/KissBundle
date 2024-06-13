@@ -1,0 +1,13 @@
+{
+    "title": "Roxit ZRC",
+    "$id": "https://buren.nl/source/buren.roxitzrc.source.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
+    "version": "0.0.1",
+    "description": "Roxit ZRC.",
+    "location": "https://zaken.preprod-rx-services.nl/api/v1",
+    "isEnabled" : false,
+    "authorizationHeader": "Authorization",
+    "auth": "jwt-HS256",
+    "jwtId": "!ChangeMe!",
+    "secret": "!ChangeMe!"
+}
